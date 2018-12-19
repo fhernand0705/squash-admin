@@ -1,13 +1,18 @@
-class CohortController < ApplicationController
+class CohortsController < ApplicationController
+
   def new # READ the create form
     @cohort = Cohort.new
   end
 
   def create # CREATES (post) new cohort
-    @cohort = Cohort.find(params[:id])
+    @cohort = Cohort.new(cohort_params)
     if @cohort.valid?
-      @cohort.save
-      redirect_to :
+       @cohort.save
+       redirect_to @cohort
+    else
+       render 'cohorts/new'
+     end
+   end
 
   def edit
   end

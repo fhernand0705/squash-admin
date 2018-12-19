@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  get 'pages/home'
   resources :players
   resources :coaches
   resources :clinics
   resources :cohorts
 
-  # add root path 
+  root 'pages/home'
+
+  get 'cohorts/new', to: 'cohorts#create'
 
   # get 'cohort/new'
   # get 'cohort/edit'
