@@ -1,2 +1,16 @@
-<h1>Cohort#edit</h1>
-<p>Find me in app/views/cohort/edit.html.erb</p>
+<h1>Edit Cohort</h1>
+
+<%= form_for @cohort do |f| %>
+   <label for="form">Name of Cohort</label><br>
+     <%= f.text_field :name %><br>
+   <label for="form">Start Date</label><br>
+     <%= f.date_field :start_date %><br>
+   <label for="form">End Date</label><br>
+     <%= f.date_field :end_date %><br>
+
+   <p>
+     <%= f.submit "Update" %>
+   </p>
+<% end %>
+
+<%= link_to 'cancel', @cohort %>

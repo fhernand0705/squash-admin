@@ -1,6 +1,7 @@
  <%# form to create new cohort %>
 
  <%= form_for @cohort do |f| %>
+    <h1>Create New Cohort</h1>
     <label for="form">Name of Cohort</label><br>
       <%= f.text_field :name %><br>
     <label for="form">Start Date</label><br>
@@ -11,5 +12,7 @@
     <p>
       <%= f.submit "Create" %>
     </p>
-      <%# add link_to 'back' %>
+
 <% end %>
+
+<%= link_to 'Back', root_path %>

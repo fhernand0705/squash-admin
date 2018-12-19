@@ -4,14 +4,16 @@ Rails.application.routes.draw do
   resources :clinics
   resources :cohorts
 
-  # root 'pages/home'
+  root 'pages#home'
 
-  get '/new', to: 'cohorts#create'
+  # COHORT (CRUD) routes
+  get 'cohorts/new', to: 'cohorts#create'
+  get 'cohorts/:id/edit', to: 'cohorts#edit'
+  patch 'cohorts/:id', to: 'cohorts#update'
 
-  # get 'cohort/new'
-  # get 'cohort/edit'
+
   # get 'cohort/index'
-  # get 'cohort/delete'
+
   # get 'clinics/new'
   # get 'clinics/edit'
   # get 'clinics/index'

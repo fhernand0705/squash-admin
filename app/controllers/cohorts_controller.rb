@@ -16,10 +16,16 @@ class CohortsController < ApplicationController
 
   def show # DISPLAYS cohort information
     @cohort = Cohort.find(params[:id])
-    puts @cohort
   end
 
-  def edit
+  def edit # READ the edit form
+   @cohort = Cohort.find(params[:id])
+  end
+
+  def update # UPDATES (patch) the cohort information
+    @cohort = Cohort.find(params[:id])
+    @cohort.update(cohort_params)
+    redirect_to @cohort
   end
 
   def index
