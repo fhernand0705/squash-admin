@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   resources :clinics
   resources :cohorts
 
-  root 'pages/home'
+  # root 'pages/home'
 
-  get 'cohorts/new', to: 'cohorts#create'
+  get '/new', to: 'cohorts#create'
 
   # get 'cohort/new'
   # get 'cohort/edit'

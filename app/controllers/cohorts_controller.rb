@@ -14,6 +14,11 @@ class CohortsController < ApplicationController
      end
    end
 
+  def show # DISPLAYS cohort information
+    @cohort = Cohort.find(params[:id])
+    puts @cohort
+  end
+
   def edit
   end
 

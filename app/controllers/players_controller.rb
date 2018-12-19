@@ -1,7 +1,7 @@
 class PlayersController < ApplicationController
 
   def new #READ signup form
-  
+
   end
 
   def show #DISPLAY created objects
@@ -27,8 +27,7 @@ class PlayersController < ApplicationController
   def delete #DELETE objects
   end
 
-  private
-
+  
   # def user_params
   #   params.require(:user).permit(:first_name, :last_name, :email, :password)
   # end
