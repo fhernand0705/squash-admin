@@ -18,14 +18,11 @@ Rails.application.routes.draw do
   get 'coaches/new', to: 'coaches#create'
   patch 'coaches/:id', to: 'coaches#update'
 
+  # CLINIC (CRUD) routes
+  get 'clinics/new', to: 'clinics#create'
+  patch 'clinics/:id', to: 'clinics#update'
 
-  # get 'clinics/new'
-  # get 'clinics/edit'
-  # get 'clinics/index'
-  # get 'clinics/delete'
-  # get 'coaches/new'
-  # get 'coaches/edit'
-  # get 'coaches/index'
-  # get 'coaches/delete'
+
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

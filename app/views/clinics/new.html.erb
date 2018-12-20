@@ -1,2 +1,19 @@
-<h1>Clinics#new</h1>
-<p>Find me in app/views/clinics/new.html.erb</p>
+<h2>Add New Clinic</h2>
+<% @clinic.errors.messages do |msg| %>
+  <ul>
+    <%= msg %>
+  </ul>
+<% end %>
+
+<%= form_for @clinic do |f| %>
+   <label for="name">Clinic Name</label><br>
+     <%= f.text_field :name %><br>
+   <label for="hours">Hours</label><br>
+     <%= f.text_field :hours %><br>
+
+   <p>
+     <%= f.submit "Add Clinic" %>
+   </p>
+<% end %>
+
+<%= link_to 'Cancel', root_path %>

@@ -1,2 +1,14 @@
-<h1>Clinics#edit</h1>
-<p>Find me in app/views/clinics/edit.html.erb</p>
+<h2>Edit Clinic</h2>
+
+<%= form_for @clinic do |f| %>
+   <label for="name">Clinic Name</label><br>
+     <%= f.text_field :name %><br>
+   <label for="hours">Hours</label><br>
+     <%= f.text_field :hours %><br>
+
+   <p>
+     <%= f.submit "Save Changes" %>
+   </p>
+<% end %>
+
+<%= link_to 'Cancel', @clinic %>

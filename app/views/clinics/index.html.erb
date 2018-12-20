@@ -1,2 +1,7 @@
-<h1>Clinics#index</h1>
-<p>Find me in app/views/clinics/index.html.erb</p>
+<h2>List of Clinics</h2>
+
+<% @clinic.each do |c| %>
+    <span>ID:</span> <%= c.id %><br></br>
+    <span>Name:</span> <%= c.name %><br></br>
+    <span>Hours:</span> <%= c.hours %>
+<% end %>
