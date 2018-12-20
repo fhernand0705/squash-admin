@@ -3,6 +3,10 @@ class CoachesController < ApplicationController
     @coach = Coach.new
   end
 
+  def show # DISPLAYS new object
+    @coach = Coach.find(params[:id])
+  end
+
   def create
     @coach = Coach.new(coach_params)
     if @coach.valid?
@@ -10,7 +14,7 @@ class CoachesController < ApplicationController
        redirect_to @coach
     else
        redirect_to root_path
-    end         
+    end
   end
 
   def edit
@@ -28,6 +32,7 @@ class CoachesController < ApplicationController
     params.require(:coach).permit(:first_name,
                                   :last_name,
                                   :age,
+                                  :gender,
                                   :salary,
                                   :education)
   end

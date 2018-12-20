@@ -2,17 +2,21 @@
 
 <%= form_for @player do |f| %>
    <label>First Name</label><br>
-   <%= f.text_field :first_name %><br>
-   <label>Last Name</label><br>
-   <%= f.text_field :last_name %><br>
-   <label>Age</label><br>
-   <%= f.number_field :age %><br>
-   <label>Education</label><br>
-   <%= f.select(:education, ['', 'High School', 'College', 'Masters', 'PHD']) %>
+     <%= f.text_field :first_name %><br>
+   <label>Start Date</label><br>
+     <%= f.text_field :last_name %><br>
+     <label>Age</label><br>
+     <%= f.number_field :age %><br>
+     <label>Gender</label>
+     <%= f.radio_button('coach', 'gender', 'male') %><br>
+     <%= f.radio_button('coach', 'gender', 'female') %><br>
+     <label>Education</label><br>
+     <%= f.select(:education, ['', 'High School', 'College', 'Masters', 'PHD']) %>
 
    <p>
-   <%= f.submit "Add Player" %>
+     <%= f.submit "Add Player" %>
    </p>
+
 <% end %>
 
-<%= link_to 'Back', 'pages/home' %>
+<%= link_to 'Back', root_path %>
