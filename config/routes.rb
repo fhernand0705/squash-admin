@@ -7,12 +7,12 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   # COHORT (CRUD) routes
+  # get 'cohorts/all-cohorts', to: 'cohorts#index'
   get 'cohorts/new', to: 'cohorts#create'
   get 'cohorts/:id/edit', to: 'cohorts#edit'
   patch 'cohorts/:id', to: 'cohorts#update'
 
 
-  # get 'cohort/index'
 
   # get 'clinics/new'
   # get 'clinics/edit'

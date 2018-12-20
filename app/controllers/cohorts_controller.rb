@@ -14,6 +14,7 @@ class CohortsController < ApplicationController
      end
    end
 
+
   def show # DISPLAYS cohort information
     @cohort = Cohort.find(params[:id])
   end
@@ -28,7 +29,9 @@ class CohortsController < ApplicationController
     redirect_to @cohort
   end
 
-  def index
+  def index # DISPLAYS all cohorts
+    @cohort = Cohort.all
+    puts @cohort
   end
 
   def delete
