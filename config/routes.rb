@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   get 'cohorts/new', to: 'cohorts#create'
   patch 'cohorts/:id', to: 'cohorts#update'
 
+  # PLAYER (CRUD) routes
+  get 'players/new', to: 'players#create'
+  patch 'players/:id', to: 'players#update'
 
 
   # get 'clinics/new'
