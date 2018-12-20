@@ -39,6 +39,10 @@ class PlayersController < ApplicationController
   private #makes the cohort_params private
 
   def player_params
-    params.require(:player).permit(:first_name, :last_name, :age, :education)
+    params.require(:player).permit(:first_name,
+                                   :last_name,
+                                   :age,
+                                   :education,
+                                   :gender)
   end
 end

@@ -1,17 +1,19 @@
 <h2>Add New Player</h2>
 
 <%= form_for @player do |f| %>
-   <label>First Name</label><br>
-     <%= f.text_field :first_name %><br>
-   <label>Start Date</label><br>
-     <%= f.text_field :last_name %><br>
-     <label>Age</label><br>
-     <%= f.number_field :age %><br>
-     <label>Gender</label>
-     <%= f.radio_button('coach', 'gender', 'male') %><br>
-     <%= f.radio_button('coach', 'gender', 'female') %><br>
-     <label>Education</label><br>
-     <%= f.select(:education, ['', 'High School', 'College', 'Masters', 'PHD']) %>
+<label for="first_name">First Name</label><br>
+  <%= f.text_field :first_name %><br>
+<label for="last_name">Last Name</label><br>
+  <%= f.text_field :last_name %><br>
+<label for="age">Age</label><br>
+  <%= f.number_field :age %><br></br>
+<label for="gender">Gender:</label><br></br>
+<label for="gender_male">Male</label>
+  <%= f.radio_button(:gender, 'male') %>
+<label for="gender_female">Female</label>
+  <%= f.radio_button(:gender, 'female') %><br></br>
+<label for="education">Education</label><br>
+  <%= f.select(:education, ['', 'High School', 'College', 'Masters', 'PHD']) %>
 
    <p>
      <%= f.submit "Add Player" %>

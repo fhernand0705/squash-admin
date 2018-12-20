@@ -1,4 +1,8 @@
-<h2>New Student Added!</h2>
+<h2>New Player Added!</h2>
 
-Student Name: <%= @player.last_name %>, <%= @player.first_name %> <br>
-Age: <%= @player.age %>
+<h5>First Name:</h5>  <%= @player.first_name %><br>
+<h5>Age:</h5> <%= @player.age %><br>
+<h5>Sex:</h5> <%= @player.gender %><br>
+<h5>Highest Education:</h5> <%= @player.education %><br></br>
+
+<%= link_to 'Edit Profile', edit_player_path %>
