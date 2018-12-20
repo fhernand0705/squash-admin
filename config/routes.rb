@@ -14,6 +14,10 @@ Rails.application.routes.draw do
   get 'players/new', to: 'players#create'
   patch 'players/:id', to: 'players#update'
 
+  # COACH (CRUD) routes
+  get 'coaches/new', to: 'coaches#create'
+  patch 'coaches/:id', to: 'coaches#update'
+
 
   # get 'clinics/new'
   # get 'clinics/edit'
