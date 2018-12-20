@@ -1,2 +1,7 @@
-<h1>Coaches#index</h1>
-<p>Find me in app/views/coaches/index.html.erb</p>
+<h2>List of Coaches</h2>
+
+  <% @coach.each do |c| %>
+    <span>ID:</span> <%= c.id %><br></br>
+    <span>Name:</span> <%= c.first_name %>, <%= c.last_name %>
+
+    <% end %>

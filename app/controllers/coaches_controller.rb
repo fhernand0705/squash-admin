@@ -1,13 +1,13 @@
 class CoachesController < ApplicationController
-  def new # DISPLAY create form
+  def new # READ create form
     @coach = Coach.new
   end
 
-  def show # DISPLAYS new object
+  def show # DISPLAY new object
     @coach = Coach.find(params[:id])
   end
 
-  def create
+  def create # CREATE new instance of object
     @coach = Coach.new(coach_params)
     if @coach.valid?
        @coach.save
@@ -17,10 +17,18 @@ class CoachesController < ApplicationController
     end
   end
 
-  def edit
+  def edit # READ edit form
+    @coach = Coach.find(params[:id])
   end
 
-  def index
+  def update # UPDATE instance of object
+    @coach = Coach.find(params[:id])
+    @coach.update(coach_params)
+    redirect_to @coach
+  end
+
+  def index # DISPLAY all instances of objects
+    @coach = Coach.all
   end
 
   def delete
