@@ -45,6 +45,6 @@ class CohortsController < ApplicationController
                                     :end_date,
                                     :clinic_id,
                                     :coach_id,
-                                    :player_id)
+                                     player_ids: [])
   end
 end
