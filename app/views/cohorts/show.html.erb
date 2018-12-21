@@ -3,3 +3,12 @@
   Start Date: <%= @cohort.start_date %><br>
   End Date: <%= @cohort.end_date %>
 </p>
+
+<h3>Coach's Name</h3>
+<p><%= @cohort.coach.first_name%></p>
+
+<% @cohort.players.each do |p| %>
+
+<p><%= p.player_full_name %></p>
+
+<% end %>

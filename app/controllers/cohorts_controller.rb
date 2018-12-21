@@ -14,9 +14,9 @@ class CohortsController < ApplicationController
      end
    end
 
-
   def show # DISPLAYS cohort information
     @cohort = Cohort.find(params[:id])
+
   end
 
   def edit # READ the edit form
@@ -45,6 +45,6 @@ class CohortsController < ApplicationController
                                     :end_date,
                                     :clinic_id,
                                     :coach_id,
-                                     player_ids: [])
+                                     player_ids:[])
   end
 end
