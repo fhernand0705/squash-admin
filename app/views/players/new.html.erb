@@ -1,8 +1,16 @@
+
+<button type="button" name="btn" onclick="">Trigger</button>
+
+<div id="player-modal">
+
+</div>
+
 <h2>Add New Player</h2>
 
 <%= form_for @player do |f| %>
-<label for="first_name">First Name</label><br>
-  <%= f.text_field :first_name %><br>
+<label for="first_name">First Name<br>
+  <%= f.text_field :first_name %>
+</label><br>
 <label for="last_name">Last Name</label><br>
   <%= f.text_field :last_name %><br>
 <label for="age">Age</label><br>
@@ -12,8 +20,12 @@
   <%= f.radio_button(:gender, 'male') %>
 <label for="gender_female">Female</label>
   <%= f.radio_button(:gender, 'female') %><br></br>
+  <%= f.collection_select :cohort_ids,
+                           Cohort.all,
+                          :id,
+                          :name, {:prompt => '--Add to Cohort--'} %><br></br>
 <label for="education">Education</label><br>
-  <%= f.select(:education, ['', 'High School', 'College', 'Masters', 'PHD']) %>
+  <%= f.select(:education,['--Highest Education--', 'High School', 'College', 'Masters', 'PHD']) %>
 
    <p>
      <%= f.submit "Add Player" %>

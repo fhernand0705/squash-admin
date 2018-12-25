@@ -43,6 +43,7 @@ class PlayersController < ApplicationController
                                    :last_name,
                                    :age,
                                    :education,
-                                   :gender)
+                                   :gender,
+                                    cohort_ids:[])
   end
 end

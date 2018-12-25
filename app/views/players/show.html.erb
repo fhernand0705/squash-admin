@@ -4,5 +4,10 @@
 <h5>Age:</h5> <%= @player.age %><br>
 <h5>Sex:</h5> <%= @player.gender %><br>
 <h5>Highest Education:</h5> <%= @player.education %><br></br>
+<h5>Cohort:</h5><% @player.cohorts.each do |c| %>
+   <p>
+    <%= c.name %>
+   </p>
+<% end %>
 
 <%= link_to 'Edit Profile', edit_player_path %>
