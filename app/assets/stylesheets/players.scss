@@ -6,9 +6,10 @@
 
 #player-modal {
   position: fixed;
+  display: none;
   z-index: 1;
-  height: 75%;
-  width: auto;
+  height: 50%;
+  width: 25%;
   background-color: whitesmoke;
 
 }
