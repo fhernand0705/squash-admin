@@ -43,8 +43,8 @@ class CohortsController < ApplicationController
      params.require(:cohort).permit(:name,
                                     :start_date,
                                     :end_date,
-                                    :clinic_id,
                                     :coach_id,
+                                    :clinic_id,
                                      player_ids:[])
   end
 end

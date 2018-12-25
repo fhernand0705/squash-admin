@@ -4,8 +4,11 @@
   End Date: <%= @cohort.end_date %>
 </p>
 
+<h3>Clinic</h3>
+<p><%= @cohort.clinic.name %></p>
+
 <h3>Coach's Name</h3>
-<p><%= @cohort.coach.first_name%></p>
+<p><%= @cohort.coach.coach_full_name %></p>
 
 <% @cohort.players.each do |p| %>
 

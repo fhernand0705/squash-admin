@@ -7,27 +7,25 @@
     <label for="end_date">End Date</label><br>
       <%= f.date_field :end_date %><br></br>
 
-    <label for="coaches">Select Coach</label><br>
+    <!-- <label for="coaches">Select Coach</label><br> -->
+      <%= f.collection_select :clinic_id,
+                               Clinic.all,
+                              :id,
+                              :name, {:prompt => 'Add Clinic'} %><br></br>
+
       <%= f.collection_select :coach_id,
-                              Coach.all,
+                               Coach.all,
                               :id,
-                              :coach_full_name %><br></br>
+                              :coach_full_name, {:prompt => 'Add Coach'} %><br></br>
 
-    <label for="players">Select Players</label>
-      <%= f.collection_check_boxes :player_ids,
-                              Player.all,
+    <!-- <label for="players">Select Players</label><br></br> -->
+      <%= f.collection_select :player_ids,
+                               Player.all,
                               :id,
-                              :player_full_name do |b| %>
-
-    <div class="collection-check-box">
-      <%= b.check_box %>
-      <%= b.label %>
-    </div>
-<% end %>
-
-<p>
-<%= f.submit "Create" %>
-</p>
+                              :player_full_name, {:prompt => 'Add Player'}, {:multiple => true} %>
+    <p>
+      <%= f.submit "Create" %>
+    </p>
 
 <% end %>
 
