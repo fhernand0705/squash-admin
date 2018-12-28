@@ -1,38 +1,60 @@
-
 <button type="button" onclick="modalOpen()">Trigger</button>
 
-<div id="player-modal">
-  <div class="modal-body">
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<div class="main-container">
+  <div id="player-modal">
+
+     <div class="header">
+       <h2>Add New Player</h2>
+       <hr class="hr-break">
+     </div>
+
+     <div class="modal-body">
+        <%= form_for @player do |f| %>
+
+       <div class="top-field">
+         <label for="first_name">First Name</label><br>
+           <%= f.text_field :first_name %><br>
+         <label for="last_name">Last Name</label><br>
+           <%= f.text_field :last_name %><br>
+        <label for="age">Age</label><br>
+           <%= f.number_field :age %><br></br>
+       </div>
+
+       <div class="btm-field">
+         <%= f.select(:gender, ['--Sex--', 'Male', 'Female'])%><br></br>
+         <%= f.collection_select :cohort_ids,
+                                  Cohort.all,
+                                  :id,
+                                  :name,
+                                  {:prompt => '--Add Cohort--'}%><br></br>
+        <%= f.select(:education, ['--Highest Education--',
+                                 'High School',
+                                 'College',
+                                 'Masters',
+                                 'PHD']) %><br></br>
+       </div>
+
+       <div class="submitBtn">
+         <%= f.submit "Add Player" %>
+       </div><br>
+
+      <% end %>
+      <%= link_to 'Cancel', root_path %>
+
+   </div>
   </div>
 </div>
 
-<h2>Add New Player</h2>
 
-<%= form_for @player do |f| %>
-<label for="first_name">First Name<br>
-  <%= f.text_field :first_name %>
-</label><br>
-<label for="last_name">Last Name</label><br>
-  <%= f.text_field :last_name %><br>
-<label for="age">Age</label><br>
-  <%= f.number_field :age %><br></br>
-<label for="gender">Gender:</label><br></br>
-<label for="gender_male">Male</label>
-  <%= f.radio_button(:gender, 'male') %>
-<label for="gender_female">Female</label>
-  <%= f.radio_button(:gender, 'female') %><br></br>
-  <%= f.collection_select :cohort_ids,
-                           Cohort.all,
-                          :id,
-                          :name, {:prompt => '--Add to Cohort--'} %><br></br>
-<label for="education">Education</label><br>
-  <%= f.select(:education,['--Highest Education--', 'High School', 'College', 'Masters', 'PHD']) %>
+<!-- ADDING BEHAVIOR TO THE MODAL -->
 
-   <p>
-     <%= f.submit "Add Player" %>
-   </p>
+<script>
+  var player_modal = document.getElementById('player-modal');
 
-<% end %>
+  function modalOpen() {
+    player_modal.style.display = 'grid';
+    player_modal.style.justifyContent = 'center';
 
-<%= link_to 'Cancel', root_path %>
+  }
+
+</script>
