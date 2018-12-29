@@ -4,14 +4,13 @@
     <title>SquashAdmin</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body id="main-body">
 
     <%= yield %>
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   </body>
 </html>
