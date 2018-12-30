@@ -1,3 +1,48 @@
 // Place all the styles related to the Clinics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// styling player signup modal
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.clinic-header {
+  position: relative;
+  left: 1pc;
+}
+
+.hr-break-4 {
+  width: 99%;
+  position: absolute;
+  top: 3pc;
+}
+
+#clinic-modal {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.clinic-body {
+  position: relative;
+  background-color: red;
+  top: 6pc;
+  height: 35%;
+  width: 125%;
+  border-radius: 10px;
+}
+
+.clinic-form, .submit-btn-4 {
+  position: relative;
+  left: 2.5pc;
+}
+
+input {
+  border-radius: 5px;
+}

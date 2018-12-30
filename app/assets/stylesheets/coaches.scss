@@ -1,3 +1,50 @@
 // Place all the styles related to the Coaches controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+:root {
+  font-family: sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.coach-header {
+  position: relative;
+  left: 1pc;
+}
+
+.hr-break-3 {
+  width: 99%;
+  position: absolute;
+  top: 3pc;
+}
+
+#coach-modal {
+  position: fixed;
+  display: none;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.coach-body {
+  position: relative;
+  background-color: red;
+  top: 6pc;
+  height: 50%;
+  width: 125%;
+  border-radius: 10px;
+}
+
+.coach-form, .submit-btn-3 {
+  position: relative;
+  left: 2.5pc;
+}
+
+input {
+  border-radius: 5px;
+}

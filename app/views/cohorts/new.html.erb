@@ -1,21 +1,21 @@
 <!-- BUTTON TO TRIGGER THE MODAL -->
 <button type="button" onclick="modalOpen()">Trigger</button>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
 <div class="main-container">
    <div id="cohort-modal">
 
-     <div class="modal-body">
-         <h1>Create New Cohort</h1>
-         <hr class="hr-break">
-       <div class="form">
+     <div class="cohort-body">
+        <h1 class="cohort-header">
+          Create New Cohort
+        </h1>
+        <hr class="hr-break-2">
+     <div class="cohort-form">
         <%= form_for @cohort do |f| %>
-       <label for="name">Name of Cohort</label><br>
+        <label for="name">Name of Cohort</label><br>
         <%= f.text_field :name %><br>
-       <label for="start_date">Start Date</label><br>
+        <label for="start_date">Start Date</label><br>
         <%= f.date_field :start_date %><br>
-       <label for="end_date">End Date</label><br>
+        <label for="end_date">End Date</label><br>
         <%= f.date_field :end_date %><br></br>
         <%= f.collection_select :clinic_id,
                                  Clinic.all,
@@ -35,7 +35,7 @@
                                 {:multiple => true} %>
     </div><br>
 
-    <div class="submit-btn">
+    <div class="submit-btn-2">
       <%= f.submit "Create" %>
       <%= link_to 'Cancel', root_path %>
     </div><br>

@@ -3,43 +3,39 @@
 <div class="main-container">
   <div id="player-modal">
 
-     <div class="header">
-       <h2>Add New Player</h2>
-       <hr class="hr-break">
-     </div>
+     <div class="player-body">
+       <h2 class="player-header">
+         Add New Player
+       </h2>
+       <hr class="hr-break-1">
 
-     <div class="modal-body">
-       <%= form_for @player do |f| %>
-
-       <div class="top-field">
+       <div class="player-form">
+         <%= form_for @player do |f| %>
          <label for="first_name">First Name</label><br>
-           <%= f.text_field :first_name %><br>
+         <%= f.text_field :first_name %><br>
          <label for="last_name">Last Name</label><br>
-           <%= f.text_field :last_name %><br>
+         <%= f.text_field :last_name %><br>
          <label for="age">Age</label><br>
-           <%= f.number_field :age %><br></br>
-       </div>
-
-       <div class="btm-field">
+         <%= f.number_field :age %><br></br>
          <%= f.select(:gender, ['--Sex--', 'Male', 'Female'])%><br></br>
          <%= f.collection_select :cohort_ids,
                                   Cohort.all,
                                   :id,
                                   :name,
                                   {:prompt => '--Add Cohort--'}%><br></br>
-        <%= f.select(:education, ['--Highest Education--',
+         <%= f.select(:education, ['--Highest Education--',
                                  'High School',
                                  'College',
                                  'Masters',
                                  'PHD']) %><br></br>
-       </div>
+      </div>
 
-       <div class="submitBtn">
+      <div class="submit-btn-1">
          <%= f.submit "Add Player" %>
-       </div><br>
+         <%= link_to 'Cancel', root_path %>
+      </div><br>
 
       <% end %>
-      <%= link_to 'Cancel', root_path %>
 
    </div>
  </div>
@@ -47,7 +43,6 @@
 
 
 <!-- ADDING BEHAVIOR TO THE MODAL -->
-
 <script>
   var player_modal = document.getElementById('player-modal');
 

@@ -1,19 +1,40 @@
-<h2>Add New Clinic</h2>
-<% @clinic.errors.messages do |msg| %>
-  <ul>
-    <%= msg %>
-  </ul>
-<% end %>
+<button type="button" onclick="modalOpen()">Trigger</button>
 
-<%= form_for @clinic do |f| %>
-   <label for="name">Clinic Name</label><br>
-     <%= f.text_field :name %><br>
-   <label for="hours">Hours</label><br>
-     <%= f.text_field :hours %><br>
+<div class="main-container">
+  <div id="clinic-modal">
 
-   <p>
-     <%= f.submit "Add Clinic" %>
-   </p>
-<% end %>
+   <div class="clinic-body">
+     <h2 class="clinic-header">
+       Add New Clinic
+     </h2>
+     <hr class="hr-break-4">
 
-<%= link_to 'Cancel', root_path %>
+     <div class="clinic-form">
+       <%= form_for @clinic do |f| %>
+       <label for="name">Clinic Name</label><br>
+       <%= f.text_field :name %><br>
+       <label for="hours">Hours</label><br>
+       <%= f.text_field :hours %><br>
+     </div><br>
+
+     <div class="submit-btn-4">
+       <%= f.submit "Add Clinic" %>
+       <%= link_to 'Cancel', root_path %>
+    </div>
+     <% end %>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- ADDING BEHAVIOR TO MODAL -->
+<script>
+  var clinic_modal = document.getElementById('clinic-modal');
+
+  function modalOpen() {
+    clinic_modal.style.display = "grid";
+    clinic_modal.style.justifyContent = "center";
+  }
+
+</script>

@@ -1,23 +1,45 @@
-<h2>Add New Coach</h2>
+<!-- BUTTON TO TRIGGER THE MODAL -->
+<button type="button" onclick="modalOpen()">Trigger</button>
 
-<%= form_for @coach do |f| %>
-   <label for="first_name">First Name</label><br>
-     <%= f.text_field :first_name %><br>
-   <label for="last_name">Last Name</label><br>
-     <%= f.text_field :last_name %><br>
-   <label for="age">Age</label><br>
-     <%= f.number_field :age %><br></br>
-   <label for="gender">Gender:</label><br></br>
-   <label for="gender_male">Male</label>
-     <%= f.radio_button(:gender, 'male') %>
-   <label for="gender_female">Female</label>
-     <%= f.radio_button(:gender, 'female') %><br></br>
-   <label for="education">Education</label><br>
-     <%= f.select(:education, ['', 'High School', 'College', 'Masters', 'PHD']) %>
+<div class="main-container">
+  <div id="coach-modal">
 
-   <p>
+  <div class="coach-body">
+    <h2 class="coach-header">Add New Coach</h2>
+    <hr class="hr-break-3">
+
+  <div class="coach-form">
+    <%= form_for @coach do |f| %>
+    <label for="first_name">First Name</label><br>
+    <%= f.text_field :first_name %><br>
+    <label for="last_name">Last Name</label><br>
+    <%= f.text_field :last_name %><br>
+    <label for="age">Age</label><br>
+    <%= f.number_field :age %><br></br>
+    <%= f.select(:gender, ['--Sex--', 'Male', 'Female']) %><br>
+    <%= f.select(:education, ['--Highest Education--',
+                               'High School',
+                               'College',
+                               'Masters',
+                               'PHD']) %>
+ </div><br>
+
+   <div class="submit-btn-3">
      <%= f.submit "Add Coach" %>
-   </p>
+     <%= link_to 'Cancel', 'pages/home' %>
+   </div>
 <% end %>
 
-<%= link_to 'Cancel', 'pages/home' %>
+    </div>
+  </div>
+</div>
+
+<script>
+  var coach_modal = document.getElementById('coach-modal');
+
+  function modalOpen() {
+    coach_modal.style.display = "grid";
+    coach_modal.style.justifyContent = "center";
+  }
+
+</script>
