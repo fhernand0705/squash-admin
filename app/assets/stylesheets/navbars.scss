@@ -30,6 +30,7 @@ $link-color: black;
   display: grid;
   width: 100%;
   min-height: 15%;
+  justify-content: right;
   background-color: yellow;
   position: fixed;
   top: 0;
@@ -45,8 +46,4 @@ $link-color: black;
 .top-bar a:hover {
   background-color: rgba(47, 47, 43, 0.88) !important;
   color: white !important;
-}
-
-.test1 {
-  margin-left: 75%;
 }
