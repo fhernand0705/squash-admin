@@ -2,7 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// styling player signup modal
+// PLAYER SIGNUP MODAL
+$import: !important;
+
+
 .main-container {
   display: flex;
   justify-content: center;
@@ -10,13 +13,17 @@
 
 .player-header {
   position: relative;
-  left: 1pc;
+  font-size: 1.5pc;
+  font-weight: bold;
+  color: whitesmoke $import;
+  left: 2.5pc;
 }
 
 .hr-break-1 {
-  width: 99%;
+  width: 100%;
   position: absolute;
-  top: 3pc;
+  border-color: black $import;
+  top: 1pc;
 }
 
 #player-modal {
@@ -32,17 +39,64 @@
 .player-body {
   position: relative;
   background-color: red;
-  top: 6pc;
-  height: 60%;
+  top: 4.5pc;
+  height: 73%;
   width: 125%;
   border-radius: 10px;
 }
 
-.player-form, .submit-btn-1 {
+.player-form {
   position: relative;
   left: 2.5pc;
+  color: whitesmoke;
 }
 
-input {
+
+.player-label {
+  margin: 0;
+  line-height: 0;
+  display: inline-block;
+}
+
+.player-body input {
   border-radius: 5px;
+  width: fit-content $import;
+  margin-bottom: 0 $import;
+  border-color: black $import;
+}
+
+.select-field {
+  width: fit-content $import;
+  margin-bottom: .5pc;
+  padding-right: 1.5pc;
+  border-color: black $import;
+  color: whitesmoke $import;
+}
+
+.player-submit {
+  position: relative;
+  left: 4pc;
+  margin-top: -15px;
+  height: 2pc;
+}
+
+.player-btn {
+  background-color: black $import;
+  border-color: transparent $import;
+}
+
+.player-btn:hover {
+  background-color: white $import;
+  color: black $import;
+}
+
+.cancel-link {
+  position: relative;
+  left: 6.5pc;
+  color: black $import;
+  font-weight: bold;
+}
+
+.cancel-link:hover {
+  opacity: .5;
 }

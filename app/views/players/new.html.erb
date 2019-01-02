@@ -1,4 +1,4 @@
-<button type="button" onclick="modalOpen()">Trigger</button>
+<button type="button" id="btn" onclick="modalOpen()">Trigger</button>
 
 <div class="main-container">
   <div id="player-modal">
@@ -11,45 +11,33 @@
 
        <div class="player-form">
          <%= form_for @player do |f| %>
-         <label for="first_name">First Name</label><br>
+         <label class="player-label" for="first_name">First Name</label><br>
          <%= f.text_field :first_name %><br>
-         <label for="last_name">Last Name</label><br>
+         <label class="player-label" for="last_name">Last Name</label><br>
          <%= f.text_field :last_name %><br>
-         <label for="age">Age</label><br>
+         <label class="player-label" for="age">Age</label><br>
          <%= f.number_field :age %><br></br>
-         <%= f.select(:gender, ['--Sex--', 'Male', 'Female'])%><br></br>
-         <%= f.collection_select :cohort_ids,
+         <%= f.select(:gender, ['--Sex--', 'Male', 'Female'], {}, {:class => "select-field"}) %><br>
+         <%= f.collection_select  :cohort_ids,
                                   Cohort.all,
                                   :id,
                                   :name,
-                                  {:prompt => '--Add Cohort--'}%><br></br>
+                                  {:prompt => '--Add Cohort--'}, {:class => "select-field"} %><br>
          <%= f.select(:education, ['--Highest Education--',
                                  'High School',
                                  'College',
                                  'Masters',
-                                 'PHD']) %><br></br>
-      </div>
+                                 'PHD'], {}, {:class => "select-field"}) %><br></br>
+       </div>
 
-      <div class="submit-btn-1">
-         <%= f.submit "Add Player" %>
-         <%= link_to 'Cancel', root_path %>
+      <div class="player-submit">
+         <%= f.submit "Add Player", class: "player-btn" %>
       </div><br>
+         <%= link_to 'Cancel', root_path, class: "cancel-link" %>
+         <% end %>
 
-      <% end %>
-
-   </div>
+  </div>
  </div>
 </div>
 
-
-<!-- ADDING BEHAVIOR TO THE MODAL -->
-<script>
-  var player_modal = document.getElementById('player-modal');
-
-  function modalOpen() {
-    player_modal.style.display = 'grid';
-    player_modal.style.justifyContent = 'center';
-
-  }
-
-</script>
+<script src="/assets/players.js"></script>

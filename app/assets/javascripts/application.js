@@ -13,3 +13,10 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+// var player_modal = document.getElementById('player-modal');
+//
+// function modalOpen() {
+//   player_modal.style.display = 'grid';
+//   player_modal.style.justifyContent = 'center';
+// }
