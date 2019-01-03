@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $import: !important;
 
+// SIGNUP MODAL
 .main-container {
   display: flex;
   justify-content: center;
@@ -94,4 +95,9 @@ $import: !important;
 
 .cancel-link-2:hover {
   opacity: .5;
+}
+
+// DATA TABLE
+.cohort_table {
+  width: 100%;
 }

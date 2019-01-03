@@ -30,7 +30,7 @@ class CohortsController < ApplicationController
 
   def index # DISPLAYS all cohorts
     @cohort = Cohort.all
-    puts @cohort
+    # puts @cohort
   end
 
   def destroy #DELETE cohort

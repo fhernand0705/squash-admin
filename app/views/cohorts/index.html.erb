@@ -1,6 +1,17 @@
-<% @cohort.each do |c| %>
- <h3><%= c.name %></h3><br>
- <h3><%= c.name %></h3><br>
- <h3><%= c.name %></h3><br>
 
-<% end %>
+<table class="cohort-table">
+  <tr>
+    <th>Name</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Coach Name</th>
+  </tr>
+    <% @cohort.each do |c| %>
+  <tr>
+    <td><%= c.name %></td>
+    <td><%= c.start_date %></td>
+    <td><%= c.end_date %></td>
+    <td><%= c.coach.first_name %></td>
+  </tr>
+    <% end %>
+</table>
