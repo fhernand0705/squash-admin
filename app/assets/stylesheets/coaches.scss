@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $import: !important;
 
+// SIGNUP MODAL
 .main-container {
   display: flex;
   justify-content: center;
@@ -76,11 +77,10 @@ $import: !important;
   line-height: 0 $import;
   background-color: black $import;
   border-color: transparent $import;
-}
-
-.coach-submit-btn:hover {
-  background-color: white $import;
-  color: black $import;
+    &:hover {
+      background-color: white $import;
+      color: black $import;
+  }
 }
 
 .cancel-link-3 {
@@ -88,8 +88,22 @@ $import: !important;
   left: 6.5pc;
   top: .5pc;
   color: black $import;
+    &:hover {
+      opacity: .5;
+  }
 }
 
-.cancel-link-3:hover {
-  opacity: .5;
+// DATA TABLE
+.coaches-table {
+  width: 100%;
+}
+
+.coaches-table tr:nth-child(even) {
+  background-color: #E8E8E8;
+}
+
+.coach-trows, a, td, th {
+  color: black $import;
+  border-color: black $import;
+
 }

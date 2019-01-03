@@ -1,7 +1,22 @@
-<h2>List of Clinics</h2>
+<div class="clinics-container">
+  <div class="row">
+    <div class="column">Clinics: 2019 Squash Season</div>
+      <!-- add cohort signup button -->
+    <div class="column">Testing</div>
+  </div>
+  <table class="clinics-table">
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Hours</th>
+    </tr>
+    <% @clinic.each do |c| %>
+    <tr class="clinic-trows">
+      <td><%= link_to c.id, c %></td>
+      <td><%= c.name %></td>
+      <td><%= c.hours %></td>
+    </tr>
+    <% end %>
+  </table>
 
-<% @clinic.each do |c| %>
-    <span>ID:</span> <%= c.id %><br></br>
-    <span>Name:</span> <%= c.name %><br></br>
-    <span>Hours:</span> <%= c.hours %>
-<% end %>
+</div>

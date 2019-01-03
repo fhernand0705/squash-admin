@@ -72,11 +72,10 @@ $import: !important;
   line-height: 0 $import;
   background-color: black $import;
   border-color: transparent $import;
-}
-
-.clinic-submit-btn:hover {
-  background-color: white $import;
-  color: black $import;
+    &:hover {
+      background-color: white $import;
+      color: black $import;
+  }
 }
 
 .cancel-link-4 {
@@ -84,8 +83,22 @@ $import: !important;
   left: 6pc;
   top: .3pc;
   color: black $import;
+    &:hover {
+      opacity: .5;
+  }
 }
 
-.cancel-link-4:hover {
-  opacity: .5;
+// DATA TABLE
+.clinics-table {
+  width: 100%;
+}
+
+.clinics-table tr:nth-child(even) {
+  background-color: #E8E8E8;
+}
+
+.clinic-trows, a, td, th {
+  color: black $import;
+  border-color: black $import;
+
 }

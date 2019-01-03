@@ -98,12 +98,17 @@ $import: !important;
 }
 
 // DATA TABLE
-.container {
- display: grid;
+// .container {
+//  display: grid;
+// }
+
+.cohort-table {
+  width: 100%;
+
 }
 
-.cohort_table {
-  width: 100%;
+.cohort-table tr:nth-child(even) {
+  background-color: #E8E8E8;
 }
 
 .cohort-trows, a, td, th {

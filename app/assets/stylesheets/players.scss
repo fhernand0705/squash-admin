@@ -1,11 +1,9 @@
 // Place all the styles related to the Players controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-// PLAYER SIGNUP MODAL
 $import: !important;
 
-
+// SIGNUP MODAL
 .main-container {
   display: flex;
   justify-content: center;
@@ -91,8 +89,22 @@ $import: !important;
   position: relative;
   left: 7pc;
   color: black $import;
+    &:hover {
+      opacity: .5;
+  }
 }
 
-.cancel-link:hover {
-  opacity: .5;
+// DATA TABLE
+.players-table {
+  width: 100%;
+}
+
+.players-table tr:nth-child(even) {
+  background-color: #E8E8E8;
+}
+
+.player-trows, a, td, th {
+  color: black $import;
+  border-color: black $import;
+
 }
