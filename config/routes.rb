@@ -23,6 +23,5 @@ Rails.application.routes.draw do
   patch 'clinics/:id', to: 'clinics#update'
 
 
-
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

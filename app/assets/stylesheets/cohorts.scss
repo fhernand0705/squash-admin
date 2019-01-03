@@ -98,6 +98,16 @@ $import: !important;
 }
 
 // DATA TABLE
+.container {
+ display: grid;
+}
+
 .cohort_table {
   width: 100%;
+}
+
+.cohort-trows, a, td, th {
+  color: black $import;
+  border-color: black $import;
+
 }

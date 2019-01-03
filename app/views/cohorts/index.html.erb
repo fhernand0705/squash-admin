@@ -1,17 +1,23 @@
-
-<table class="cohort-table">
-  <tr>
-    <th>Name</th>
-    <th>Start Date</th>
-    <th>End Date</th>
-    <th>Coach Name</th>
-  </tr>
+<div class="container">
+  <div class="row">
+    <div class="column">Cohorts: 2019 Squash Season</div>
+    <div class="column">Testing</div> <!-- add cohort signup button -->
+  </div>
+  <table class="cohort-table">
+    <tr>
+      <th>Name</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Coach</th>
+    </tr>
     <% @cohort.each do |c| %>
-  <tr>
-    <td><%= c.name %></td>
-    <td><%= c.start_date %></td>
-    <td><%= c.end_date %></td>
-    <td><%= c.coach.first_name %></td>
-  </tr>
+    <tr class="cohort-trows">
+      <td><%= link_to c.name, c %></td>
+      <td><%= c.start_date %></td>
+      <td><%= c.end_date %></td>
+      <td><%= c.coach.try(:last_name) %></td>
+    </tr>
     <% end %>
-</table>
+  </table>
+
+</div>

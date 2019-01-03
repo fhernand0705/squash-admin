@@ -19,7 +19,7 @@ class CohortsController < ApplicationController
   end
 
   def edit # READ the edit form
-   @cohort = Cohort.find(params[:id])
+    @cohort = Cohort.find(params[:id])
   end
 
   def update # UPDATES (patch) the cohort information
