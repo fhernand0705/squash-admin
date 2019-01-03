@@ -1,9 +1,7 @@
 // Place all the styles related to the Coaches controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-:root {
-  font-family: sans-serif;
-}
+$import: !important;
 
 .main-container {
   display: flex;
@@ -12,13 +10,17 @@
 
 .coach-header {
   position: relative;
-  left: 1pc;
+  left: 3pc;
+  font-size: 1.5pc;
+  font-weight: bold;
+  color: whitesmoke $import;
 }
 
 .hr-break-3 {
   width: 99%;
   position: absolute;
-  top: 3pc;
+  border-color: black $import;
+  top: 1pc;
 }
 
 #coach-modal {
@@ -34,17 +36,60 @@
 .coach-body {
   position: relative;
   background-color: red;
-  top: 6pc;
-  height: 50%;
-  width: 125%;
+  top: 4.5pc;
+  height: 70%;
+  width: 130%;
   border-radius: 10px;
 }
 
-.coach-form, .submit-btn-3 {
-  position: relative;
-  left: 2.5pc;
+.coach-body input {
+  width: fit-content $import;
+  margin-bottom: 1 $import;
+  border-color: black $import;
+  border-radius: 5px;
 }
 
-input {
-  border-radius: 5px;
+.coach-form {
+  position: relative;
+  left: 2.5pc;
+  color: whitesmoke;
+}
+.coach-label {
+  margin: 0;
+  line-height: 0;
+  display: inline-block;
+}
+
+.coach-select-field {
+  width: fit-content $import;
+  margin-bottom: .5pc;
+  padding-right: 1.5pc;
+  border-color: black $import;
+  color: whitesmoke $import;
+}
+
+.coach-submit-btn {
+  position: relative;
+  left: 3.8pc;
+  height: 2pc;
+  font-size: .8pc $import;
+  line-height: 0 $import;
+  background-color: black $import;
+  border-color: transparent $import;
+}
+
+.coach-submit-btn:hover {
+  background-color: white $import;
+  color: black $import;
+}
+
+.cancel-link-3 {
+  position: relative;
+  left: 6.5pc;
+  top: .5pc;
+  color: black $import;
+}
+
+.cancel-link-3:hover {
+  opacity: .5;
 }

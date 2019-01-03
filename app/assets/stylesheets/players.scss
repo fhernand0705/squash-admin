@@ -51,7 +51,6 @@ $import: !important;
   color: whitesmoke;
 }
 
-
 .player-label {
   margin: 0;
   line-height: 0;
@@ -73,14 +72,12 @@ $import: !important;
   color: whitesmoke $import;
 }
 
-.player-submit {
+.player-btn {
   position: relative;
   left: 4pc;
   margin-top: -15px;
   height: 2pc;
-}
-
-.player-btn {
+  line-height: 0 $import;
   background-color: black $import;
   border-color: transparent $import;
 }

@@ -1,9 +1,7 @@
 // Place all the styles related to the Cohort controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-:root {
-  font-family: sans-serif;
-}
+$import: !important;
 
 .main-container {
   display: flex;
@@ -13,12 +11,16 @@
 .cohort-header {
   padding-right: 1.5pc;
   padding-left: 1.5pc;
+  font-size: 1.5pc;
+  font-weight: bold;
+  color: whitesmoke $import;
 }
 
 .hr-break-2 {
   width: 99.5%;
   position: absolute;
-  top: 3pc;
+  border-color: black $import;
+  top: 1pc;
 }
 
 #cohort-modal {
@@ -34,17 +36,63 @@
 .cohort-body {
   position: relative;
   background-color: red;
-  top: 3pc;
-  height: 68%;
+  top: 2.5pc;
+  height: 73%;
   width: 100%;
   border-radius: 10px;
 }
 
-.cohort-form, .submit-btn-2 {
-  position: relative;
-  left: 6pc;
+.cohort-body input {
+  width: fit-content $import;
+  margin-bottom: 0 $import;
+  border-color: black $import;
+  border-radius: 5px;
 }
 
-input {
-  border-radius: 5px;
+.cohort-label {
+  margin: 0;
+  line-height: 0;
+  display: inline-block;
+}
+
+.cohort-select-field {
+  width: fit-content $import;
+  margin-bottom: .5pc;
+  padding-right: 1.5pc;
+  border-color: black $import;
+  color: whitesmoke $import;
+}
+
+.cohort-form {
+  position: relative;
+  left: 3.5pc;
+  color: whitesmoke;
+}
+
+.cohort-submit-btn {
+  position: relative;
+  left: 5pc;
+  margin-top: -10px;
+  height: 2pc;
+  font-size: .8pc $import;
+  line-height: 0 $import;
+  background-color: black $import;
+  border-color: transparent $import;
+}
+
+.cohort-submit-btn:hover {
+  background-color: white $import;
+  color: black $import;
+}
+
+.cancel-link-2 {
+  position: relative;
+  left: 7pc;
+  top: .5pc;
+  color: black $import;
+
+}
+
+.cancel-link-2:hover {
+  opacity: .5;
 }

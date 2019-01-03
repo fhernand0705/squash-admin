@@ -19,7 +19,7 @@
          <%= f.number_field :age %><br></br>
          <%= f.select(:gender, ['--Sex--', 'Male', 'Female'], {}, {:class => "select-field"}) %><br>
          <%= f.collection_select  :cohort_ids,
-                                  Cohort.all,
+                                   Cohort.all,
                                   :id,
                                   :name,
                                   {:prompt => '--Add Cohort--'}, {:class => "select-field"} %><br>
@@ -30,10 +30,10 @@
                                  'PHD'], {}, {:class => "select-field"}) %><br></br>
        </div>
 
-      <div class="player-submit">
-         <%= f.submit "Add Player", class: "player-btn" %>
-      </div><br>
+       <div>
+         <%= f.submit "Add Player", class: "player-btn" %><br>
          <%= link_to 'Cancel', root_path, class: "cancel-link" %>
+       </div>
          <% end %>
 
   </div>

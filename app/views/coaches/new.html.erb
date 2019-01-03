@@ -7,26 +7,25 @@
   <div class="coach-body">
     <h2 class="coach-header">Add New Coach</h2>
     <hr class="hr-break-3">
-
   <div class="coach-form">
     <%= form_for @coach do |f| %>
-    <label for="first_name">First Name</label><br>
+    <label class="coach-label" for="first_name">First Name</label><br>
     <%= f.text_field :first_name %><br>
-    <label for="last_name">Last Name</label><br>
+    <label class="coach-label" for="last_name">Last Name</label><br>
     <%= f.text_field :last_name %><br>
-    <label for="age">Age</label><br>
-    <%= f.number_field :age %><br></br>
-    <%= f.select(:gender, ['--Sex--', 'Male', 'Female']) %><br>
+    <label class="coach-label" for="age">Age</label><br>
+    <%= f.number_field :age %><br>
+    <%= f.select(:gender, ['--Sex--', 'Male', 'Female'], {}, {:class => "coach-select-field"}) %><br>
     <%= f.select(:education, ['--Highest Education--',
                                'High School',
                                'College',
                                'Masters',
-                               'PHD']) %>
+                               'PHD'], {}, {:class => "coach-select-field"}) %>
  </div><br>
 
-   <div class="submit-btn-3">
-     <%= f.submit "Add Coach" %>
-     <%= link_to 'Cancel', 'pages/home' %>
+   <div>
+     <%= f.submit "Add Coach", class: "coach-submit-btn" %><br>
+     <%= link_to 'Cancel', 'pages/home', class: "cancel-link-3" %>
    </div>
 <% end %>
 
@@ -34,12 +33,4 @@
   </div>
 </div>
 
-<script>
-  var coach_modal = document.getElementById('coach-modal');
-
-  function modalOpen() {
-    coach_modal.style.display = "grid";
-    coach_modal.style.justifyContent = "center";
-  }
-
-</script>
+<script src="/assets/coaches.js"></script>

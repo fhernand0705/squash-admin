@@ -11,47 +11,41 @@
         <hr class="hr-break-2">
      <div class="cohort-form">
         <%= form_for @cohort do |f| %>
-        <label for="name">Name of Cohort</label><br>
+        <label class="cohort-label" for="name">Name of Cohort</label><br>
         <%= f.text_field :name %><br>
-        <label for="start_date">Start Date</label><br>
+        <label class="cohort-label" for="start_date">Start Date</label><br>
         <%= f.date_field :start_date %><br>
-        <label for="end_date">End Date</label><br>
+        <label class="cohort-label" for="end_date">End Date</label><br>
         <%= f.date_field :end_date %><br></br>
         <%= f.collection_select :clinic_id,
                                  Clinic.all,
                                 :id,
                                 :name,
-                                {:prompt => '--Add Clinic--'} %><br></br>
+                                {:prompt => '--Add Clinic--'},
+                                class: "cohort-select-field" %><br>
         <%= f.collection_select :coach_id,
                                  Coach.all,
                                 :id,
                                 :coach_full_name,
-                                {:prompt => '--Add Coach--'} %><br></br>
+                                {:prompt => '--Add Coach--'},
+                                class: "cohort-select-field" %><br>
         <%= f.collection_select :player_ids,
                                  Player.all,
                                 :id,
                                 :player_full_name,
                                 {:prompt => '--Add Player--'},
-                                {:multiple => true} %>
+                                {:multiple => true, :class => "cohort-select-field"} %>
     </div><br>
 
-    <div class="submit-btn-2">
-      <%= f.submit "Create" %>
-      <%= link_to 'Cancel', root_path %>
-    </div><br>
+    <div>
+      <%= f.submit "Create", class: "cohort-submit-btn" %><br>
+      <%= link_to 'Cancel', root_path, class: "cancel-link-2" %>
+    </div>
 
-    <% end %>
+      <% end %>
 
   </div>
  </div>
 </div>
 
-<script>
-  var cohort_modal = document.getElementById('cohort-modal');
-
-  function modalOpen() {
-   cohort_modal.style.display = "grid";
-   cohort_modal.style.justifyContent = "center";
-
-  }
-</script>
+<script src="/assets/cohorts.js"></script>
