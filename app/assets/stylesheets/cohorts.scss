@@ -78,11 +78,10 @@ $import: !important;
   line-height: 0 $import;
   background-color: black $import;
   border-color: transparent $import;
-}
-
-.cohort-submit-btn:hover {
-  background-color: white $import;
-  color: black $import;
+    &:hover {
+      background-color: white $import;
+      color: black $import;
+  }
 }
 
 .cancel-link-2 {

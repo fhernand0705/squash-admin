@@ -4,3 +4,4 @@
  <h4>Hours:</h4><%= @clinic.hours %><br></br>
 
  <%= link_to 'Edit', edit_clinic_path %>
+ <%= link_to 'Delete', @clinic, method: :delete, remote: true, data: {confirm: 'Are you sure?'} %>

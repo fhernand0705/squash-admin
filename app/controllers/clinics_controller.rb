@@ -31,11 +31,16 @@ class ClinicsController < ApplicationController
     @clinic = Clinic.all
   end
 
-  def delete
+  def destroy # DELETE object
+    @clinic = Clinic.find(params[:id])
+    respond_to do |format|
+      format.js
+    end
   end
 
   def clinic_params
     params.require(:clinic).permit(:name,
-                                   :hours)
+                                   :hours,
+                                   :cohort_id)
   end
 end

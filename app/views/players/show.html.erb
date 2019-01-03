@@ -11,3 +11,4 @@
 <% end %>
 
 <%= link_to 'Edit Profile', edit_player_path %>
+<%= link_to 'Delete', @player, method: :delete, remote: true, data: {confirm: 'are you sure?'}  %>

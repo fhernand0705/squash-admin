@@ -16,7 +16,6 @@ class CohortsController < ApplicationController
 
   def show # DISPLAYS cohort information
     @cohort = Cohort.find(params[:id])
-
   end
 
   def edit # READ the edit form
@@ -34,10 +33,15 @@ class CohortsController < ApplicationController
     puts @cohort
   end
 
-  def delete
+  def destroy #DELETE cohort
+    @cohort = Cohort.find(params[:id])
+    respond_to do |format|
+      format.js
+    end
+    # @cohort.destroy
   end
 
-  private #makes the cohort_params private
+  private #secures the below data
 
   def cohort_params
      params.require(:cohort).permit(:name,

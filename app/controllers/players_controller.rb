@@ -33,7 +33,11 @@ class PlayersController < ApplicationController
     @player = Player.all
   end
 
-  def delete #DELETE objects
+  def destroy #DELETE objects
+    @player = Clinic.find(params[:id])
+    respond_to do |format|
+      format.js
+    end  
   end
 
   private #makes the cohort_params private

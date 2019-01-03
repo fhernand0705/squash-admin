@@ -31,7 +31,11 @@ class CoachesController < ApplicationController
     @coach = Coach.all
   end
 
-  def delete
+  def delete # DELETE object
+    @coach = Coach.find(params[:id])
+    respond_to do |format|
+      format.js
+    end
   end
 
   private
@@ -42,6 +46,7 @@ class CoachesController < ApplicationController
                                   :age,
                                   :gender,
                                   :salary,
-                                  :education)
+                                  :education,
+                                  :cohort_id)
   end
 end

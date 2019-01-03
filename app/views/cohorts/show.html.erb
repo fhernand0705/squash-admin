@@ -16,4 +16,5 @@
 
 <% end %>
 
-<%= link_to "Edit", edit_cohort_path %>
+<%= link_to "Edit", edit_cohort_path %><br>
+<%= link_to "Delete", @cohort, method: :delete, remote: true, data: {confirm: 'are you sure?'} %>

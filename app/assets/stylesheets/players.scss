@@ -16,7 +16,7 @@ $import: !important;
   font-size: 1.5pc;
   font-weight: bold;
   color: whitesmoke $import;
-  left: 2.5pc;
+  left: 3.5pc;
 }
 
 .hr-break-1 {
@@ -72,26 +72,25 @@ $import: !important;
   color: whitesmoke $import;
 }
 
-.player-btn {
+.player-submit-btn {
   position: relative;
-  left: 4pc;
-  margin-top: -15px;
+  left: 5pc;
+  margin-top: -10px;
   height: 2pc;
+  font-size: .8pc $import;
   line-height: 0 $import;
   background-color: black $import;
   border-color: transparent $import;
-}
-
-.player-btn:hover {
-  background-color: white $import;
-  color: black $import;
+    &:hover {
+      background-color: white $import;
+      color: black $import;
+  }
 }
 
 .cancel-link {
   position: relative;
-  left: 6.5pc;
+  left: 7pc;
   color: black $import;
-  font-weight: bold;
 }
 
 .cancel-link:hover {

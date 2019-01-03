@@ -6,3 +6,4 @@
  <h5>Highest Education:</h5> <%= @coach.education %><br></br>
 
  <%= link_to 'Edit Profile', edit_coach_path %>
+ <%= link_to 'Delete', @coach, method: :delete, remote: true, data: {confirm: 'Are you sure?'} %>
