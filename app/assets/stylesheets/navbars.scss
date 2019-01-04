@@ -1,32 +1,8 @@
 $link-position: relative;
 $link-color: black;
 
-// SIDE BAR
-.side-bar {
-  display: grid;
-  position: fixed;
-  top: 0;
-  padding-bottom: 50%;
-  height: 100%;
-  min-width: 15%;
-  background-color: red;
-  z-index: 1;
-}
-
-.side-bar a {
-  display: block;
-  color: $link-color !important;
-  text-align: center;
-  padding: 2pc;
-}
-
-.side-bar a:hover {
-  background-color: rgba(238, 245, 116, 0.88) !important;
-  color: purple !important;
-}
-
 // TOP BAR
-.top-bar {
+#top-bar {
   display: grid;
   width: 100%;
   min-height: 15%;
@@ -36,14 +12,38 @@ $link-color: black;
   top: 0;
 }
 
-.top-bar a {
+#top-bar a {
   display: block;
   color: $link-color !important;
   text-align: center;
   padding: 2pc;
 }
 
-.top-bar a:hover {
+#top-bar a:hover {
   background-color: rgba(47, 47, 43, 0.88) !important;
   color: white !important;
+}
+
+// SIDE BAR
+#side-bar {
+  display: grid;
+  position: fixed;
+  top: 0;
+  padding-bottom: 50%;
+  height: 100%;
+  min-width: 12%;
+  background-color: red;
+  z-index: 1;
+}
+
+#side-bar a {
+  display: block;
+  color: $link-color !important;
+  text-align: center;
+  padding: 2pc;
+}
+
+#side-bar a:hover {
+  background-color: rgba(238, 245, 116, 0.88) !important;
+  color: purple !important;
 }

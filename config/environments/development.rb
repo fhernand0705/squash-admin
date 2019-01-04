@@ -6,6 +6,10 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
 
+  Raven.configure do |config|
+    config.dsn = 'http://public:secret@example.com/project-id'
+  end
+
   # Do not eager load code on boot.
   config.eager_load = false
 

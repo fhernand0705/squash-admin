@@ -1,8 +1,10 @@
-<div class="container">
+<%= render 'new' %>
+<div class="wrapper">
   <div class="row">
     <div class="column">Cohorts: 2019 Squash Season</div>
-      <!-- add cohort signup button -->
-    <div class="column">Testing</div>
+    <div class="column">
+    <button type="button" onclick="modalOpen()">Trigger</button>
+    </div>
   </div>
   <table class="cohort-table">
     <tr>
@@ -11,7 +13,7 @@
       <th>End Date</th>
       <th>Coach</th>
     </tr>
-    <% @cohort.each do |c| %>
+    <% @cohort_all.each do |c| %>
     <tr class="cohort-trows">
       <td><%= link_to c.name, c %></td>
       <td><%= c.start_date %></td>
@@ -22,3 +24,5 @@
   </table>
 
 </div>
+
+<script src="/assets/cohorts.js"></script>

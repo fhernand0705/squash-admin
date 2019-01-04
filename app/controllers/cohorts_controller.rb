@@ -29,8 +29,8 @@ class CohortsController < ApplicationController
   end
 
   def index # DISPLAYS all cohorts
-    @cohort = Cohort.all
-    # puts @cohort
+    @cohort_all = Cohort.all
+    @cohort = Cohort.new
   end
 
   def destroy #DELETE cohort
