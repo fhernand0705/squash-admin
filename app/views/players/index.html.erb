@@ -1,22 +1,51 @@
-<div class="players-container">
+<%= render 'new' %>
+
+<div class="wrapper">
   <div class="row">
-    <div class="column">Players: 2019 Squash Season</div>
-      <!-- add cohort signup button -->
-    <div class="column">Testing</div>
+    <div class="column player-table-head">Players: 2019 Squash Season</div>
+    <div class="column-6">
+      <button type="button" class="add-player-btn" onclick="playerOpen()">Add Player</button>
+    </div>
   </div>
   <table class="players-table">
     <tr>
       <th>Id</th>
       <th>First Name</th>
       <th>Last Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Profile</th>
+      <th>Edit</th>
     </tr>
-    <% @player.each do |p| %>
+    <% @player_all.each do |p| %>
     <tr class="player-trows">
-      <td><%= link_to p.id, p %></td>
+      <td><%= p.id %></td>
       <td><%= p.first_name %></td>
       <td><%= p.last_name %></td>
+      <td><%= p.age %></td>
+      <td><%= p.gender.capitalize %></td>
+      <td>
+        <%= link_to player_path(p.id) do %>
+        <i class="fas fa-user"></i>
+        <% end %>
+      </td>
+      <td>
+        <%= link_to edit_player_path(p.id) do %>
+        <i class="fas fa-user-edit"></i>
+        <% end %>
+      </td>
     </tr>
     <% end %>
   </table>
 
 </div>
+
+<script src="/assets/players.js"></script>
+
+<script>
+  $('.add-player-btn').on('click', function() {
+    if ($('.player-body').css('opacity') == 0) $('.player-body').css('opacity', 1);
+    else $('.player-body').css('opacity', 0);
+});
+
+</script>

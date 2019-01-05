@@ -2,14 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.wrapper {
-  padding: 10% 15%;
-}
-
 // SIGNUP MODAL
 .modal-container {
   display: flex;
   justify-content: center;
+}
+
+.add-cohort-btn {
+  position: relative;
+  background-color: #618934 !important;
+  border-color: #618934;
+  left: 85%;
+  font-size: .8em;
+  padding: 5px;
+    &:hover {
+       background-color: #7D9E58 !important;
+       color: white;
+       box-shadow: .5px 2px black !important;
+  }
 }
 
 .cohort-header {
@@ -44,6 +54,13 @@
   height: 73%;
   width: 100%;
   border-radius: 10px;
+  box-shadow: 2px 2px;
+}
+
+.cohort-form {
+  position: relative;
+  left: 3.5pc;
+  color: whitesmoke;
 }
 
 .cohort-body input {
@@ -67,11 +84,6 @@
   color: whitesmoke !important;
 }
 
-.cohort-form {
-  position: relative;
-  left: 3.5pc;
-  color: whitesmoke;
-}
 
 .cohort-submit-btn {
   position: relative;
@@ -101,10 +113,20 @@
 }
 
 // DATA TABLE
+.wrapper {
+  padding: 10% 15%;
+}
+
+.cohort-table-head {
+  font-size: 2em;
+  font-weight: bold;
+}
 
 .cohort-table {
   min-width: 115%;
-  min-height: 100%
+  min-height: 100%;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .cohort-table tr:nth-child(even) {

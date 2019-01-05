@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+ :root {
+   background-color: whitesmoke;
+ }
+
+ #main-body {
+   font-family: 'Rajdhani', sans-serif !important;
+
+ }

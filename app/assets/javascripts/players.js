@@ -3,9 +3,17 @@
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 
 var player_modal = document.getElementById('player-modal');
-// var player_body = document.getElementById('player-body');
+var side_bar = document.getElementById('side-bar');
 
-function modalOpen() {
+function playerOpen() {
   player_modal.style.display = 'grid';
   player_modal.style.justifyContent = 'center';
+  side_bar.style.zIndex = '0';
 };
+
+window.onclick = function(event) {
+  if (event.target == player_modal) {
+    player_modal.style.display = "none";
+
+  }
+}

@@ -3,9 +3,23 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 // SIGNUP MODAL
-.main-container {
+.modal-container {
   display: flex;
   justify-content: center;
+}
+
+.add-player-btn {
+  position: relative;
+  background-color: #618934 !important;
+  border-color: #618934;
+  left: 75%;
+  font-size: .8em;
+  padding: 5px;
+    &:hover {
+       background-color: #7D9E58 !important;
+       color: white;
+       box-shadow: .5px 2px black !important;
+  }
 }
 
 .player-header {
@@ -13,7 +27,7 @@
   font-size: 1.5em;
   font-weight: bold;
   color: whitesmoke !important;
-  left: 3.5pc;
+  left: 25%;
 }
 
 .hr-break-1 {
@@ -29,17 +43,20 @@
   z-index: 1;
   top: 0;
   height: 100%;
-  width: 100%;
+  min-width: 150%;
   background-color: rgba(0,0,0,0.4);
 }
 
-#player-body {
+.player-body {
   position: relative;
   background-color: red;
-  top: 4.5pc;
+  top: 10%;
   height: 73%;
   width: 125%;
   border-radius: 10px;
+  box-shadow: 2px 2px;
+  -webkit-transition: all .7s ease-in;
+  opacity: 0;
 }
 
 .player-form {
@@ -54,14 +71,14 @@
   display: inline-block;
 }
 
-#player-body input {
+.player-body input {
   border-radius: 5px;
   width: fit-content !important;
   margin-bottom: 0 !important;
   border-color: black !important;
 }
 
-.select-field {
+.player-select-field {
   width: fit-content !important;
   margin-bottom: .5pc;
   padding-right: 1.5pc;
@@ -71,10 +88,10 @@
 
 .player-submit-btn {
   position: relative;
-  left: 5pc;
+  left: 30%;
   margin-top: -10px;
-  height: 2pc;
-  font-size: .8pc !important;
+  height: 2em;
+  font-size: .8em !important;
   line-height: 0 !important;
   background-color: black !important;
   border-color: transparent !important;
@@ -88,14 +105,27 @@
   position: relative;
   left: 7pc;
   color: black !important;
+  font-weight: bold;
     &:hover {
-      opacity: .5;
+      color: whitesmoke !important;
+      font-weight: bold;
   }
 }
 
 // DATA TABLE
+.wrapper {
+  padding: 10% 15%;
+}
+
+.player-table-head {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 .players-table {
-  width: 100%;
+  width: 110%;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .players-table tr:nth-child(even) {
@@ -106,4 +136,9 @@
   color: black !important;
   border-color: black !important;
 
+}
+
+.player_id:hover {
+  color: #618934;
+  background-color: whitesmoke;
 }

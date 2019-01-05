@@ -30,14 +30,15 @@ class PlayersController < ApplicationController
   end
 
   def index #DISPLAY all objects
-    @player = Player.all
+    @player_all = Player.all
+    @player = Player.new
   end
 
   def destroy #DELETE objects
     @player = Clinic.find(params[:id])
     respond_to do |format|
       format.js
-    end  
+    end
   end
 
   private #makes the cohort_params private
