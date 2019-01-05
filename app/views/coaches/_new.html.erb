@@ -1,11 +1,10 @@
-<!-- BUTTON TO TRIGGER THE MODAL -->
-<button type="button" onclick="modalOpen()">Trigger</button>
+<!-- COACH SIGN UP MODAL -->
 
-<div class="main-container">
+<div class="modal-container">
   <div id="coach-modal">
 
   <div class="coach-body">
-    <h2 class="coach-header">Add New Coach</h2>
+    <h2 class="coach-header">Add Coach</h2>
     <hr class="hr-break-3">
   <div class="coach-form">
     <%= form_for @coach do |f| %>
@@ -15,7 +14,9 @@
     <%= f.text_field :last_name %><br>
     <label class="coach-label" for="age">Age</label><br>
     <%= f.number_field :age %><br>
-    <%= f.select(:gender, ['--Sex--', 'Male', 'Female'], {}, {:class => "coach-select-field"}) %><br>
+    <label class="coach-label" for="salary">Salary</label><br>
+    <%= f.number_field :salary %><br>
+    <%= f.select(:gender, ['--Gender--', 'Male', 'Female'], {}, {:class => "coach-select-field"}) %><br>
     <%= f.select(:education, ['--Highest Education--',
                                'High School',
                                'College',
@@ -24,8 +25,8 @@
    </div><br>
 
    <div>
-     <%= f.submit "Add Coach", class: "coach-submit-btn" %><br>
-     <%= link_to 'Cancel', 'pages/home', class: "cancel-link-3" %>
+     <%= f.submit "Create", class: "coach-submit-btn" %><br>
+     <%= link_to 'Cancel', coaches_path, class: "cancel-link-3" %>
    </div>
      <% end %>
 

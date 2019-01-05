@@ -28,7 +28,8 @@ class CoachesController < ApplicationController
   end
 
   def index # DISPLAY all instances of objects
-    @coach = Coach.all
+    @coach_all = Coach.all
+    @coach = Coach.new
   end
 
   def delete # DELETE object

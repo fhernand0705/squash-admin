@@ -1,26 +1,39 @@
 // Place all the styles related to the Coaches controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-$import: !important;
 
 // SIGNUP MODAL
-.main-container {
+.modal-container {
   display: flex;
   justify-content: center;
 }
 
+.add-coach-btn {
+  position: relative;
+  background-color: #618934 !important;
+  font-family: 'Oswald', sans-serif;
+  border-color: #618934;
+  font-size: 1em;
+  padding: 5px;
+    &:hover {
+       background-color: #7D9E58 !important;
+       color: white;
+       box-shadow: .5px 2px black !important;
+  }
+}
+
 .coach-header {
   position: relative;
-  left: 3pc;
-  font-size: 1.5pc;
+  left: 28%;
+  font-size: 1.8em;
   font-weight: bold;
-  color: whitesmoke $import;
+  color: whitesmoke !important;
 }
 
 .hr-break-3 {
   width: 99%;
   position: absolute;
-  border-color: black $import;
+  border-color: black !important;
   top: 1pc;
 }
 
@@ -37,17 +50,10 @@ $import: !important;
 .coach-body {
   position: relative;
   background-color: red;
-  top: 4.5pc;
-  height: 70%;
+  top: 10%;
+  height: 80%;
   width: 130%;
   border-radius: 10px;
-}
-
-.coach-body input {
-  width: fit-content $import;
-  margin-bottom: 1 $import;
-  border-color: black $import;
-  border-radius: 5px;
 }
 
 .coach-form {
@@ -55,6 +61,14 @@ $import: !important;
   left: 2.5pc;
   color: whitesmoke;
 }
+
+.coach-body input {
+  width: fit-content !important;
+  margin-bottom: 1 !important;
+  border-color: black !important;
+  border-radius: 5px;
+}
+
 .coach-label {
   margin: 0;
   line-height: 0;
@@ -62,40 +76,55 @@ $import: !important;
 }
 
 .coach-select-field {
-  width: fit-content $import;
+  width: fit-content !important;
   margin-bottom: .5pc;
   padding-right: 1.5pc;
-  border-color: black $import;
-  color: whitesmoke $import;
+  border-color: black !important;
+  color: whitesmoke !important;
 }
 
 .coach-submit-btn {
   position: relative;
-  left: 3.8pc;
-  height: 2pc;
-  font-size: .8pc $import;
-  line-height: 0 $import;
-  background-color: black $import;
-  border-color: transparent $import;
+  left: 30%;
+  height: 2em;
+  font-family: 'Oswald', sans-serif !important;
+  margin-top: -25px;
+  font-size: .9em !important;
+  line-height: 0 !important;
+  background-color: black !important;
+  border-color: transparent !important;
     &:hover {
-      background-color: white $import;
-      color: black $import;
+      background-color: white !important;
+      color: black !important;
   }
 }
 
 .cancel-link-3 {
   position: relative;
-  left: 6.5pc;
-  top: .5pc;
-  color: black $import;
+  left: 43%;
+  top: -5px;
+  color: black !important;
+  font-weight: bold;
     &:hover {
-      opacity: .5;
+      color: whitesmoke !important;
+      font-weight: bold;
   }
 }
 
 // DATA TABLE
+.wrapper {
+  padding: 10% 15%;
+}
+
+.coaches-table-head {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 .coaches-table {
   width: 100%;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .coaches-table tr:nth-child(even) {
@@ -103,7 +132,7 @@ $import: !important;
 }
 
 .coach-trows, a, td, th {
-  color: black $import;
-  border-color: black $import;
+  color: black !important;
+  border-color: black !important;
 
 }

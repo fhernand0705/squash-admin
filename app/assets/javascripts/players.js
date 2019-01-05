@@ -11,6 +11,11 @@ function playerOpen() {
   side_bar.style.zIndex = '0';
 };
 
+$('.add-player-btn').on('click', function() {
+  if ($('.player-body').css('opacity') == 0) $('.player-body').css('opacity', 1);
+  else $('.player-body').css('opacity', 0);
+});
+
 window.onclick = function(event) {
   if (event.target == player_modal) {
     player_modal.style.display = "none";

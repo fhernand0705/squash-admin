@@ -1,27 +1,27 @@
-$link-position: relative;
-$link-color: black;
-
 // TOP BAR
 #top-bar {
   display: grid;
   width: 100%;
   min-height: 15%;
-  justify-content: right;
   background-color: yellow;
   position: fixed;
   top: 0;
 }
 
-#top-bar a {
-  display: block;
-  color: $link-color !important;
-  text-align: center;
-  padding: 2pc;
+.logo {
+  position: relative;
+  left: 15%;
 }
 
-#top-bar a:hover {
-  background-color: rgba(47, 47, 43, 0.88) !important;
-  color: white !important;
+#top-bar a {
+  display: block;
+  color: black !important;
+  text-align: center;
+  padding: 2pc;
+    &:hover {
+      background-color: rgba(47, 47, 43, 0.88) !important;
+      color: white !important;
+  }
 }
 
 // SIDE BAR
@@ -38,7 +38,7 @@ $link-color: black;
 
 #side-bar a {
   display: block;
-  color: $link-color !important;
+  color: black !important;
   text-align: center;
   padding: 2pc;
 }

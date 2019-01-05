@@ -1,22 +1,50 @@
-<div class="coaches-container">
+<%= render 'new' %>
+
+<div class="wrapper">
   <div class="row">
-    <div class="column">Coaches: 2019 Squash Season</div>
-      <!-- add cohort signup button -->
-    <div class="column">Testing</div>
+    <div class="column coaches-table-head">Coaches</div>
+    <div class="column-6">
+      <button type="button" class="add-coach-btn" onclick="coachOpen()">Add Coach</button>
+    </div>
   </div>
   <table class="coaches-table">
     <tr>
-      <th>Id</th>
+      <th>ID</th>
       <th>First Name</th>
       <th>Last Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Salary</th>
+      <th>Profile</th>
+      <th>Edit</th>
+      <th>Remove</th>
     </tr>
-    <% @coach.each do |c| %>
+    <% @coach_all.each do |c| %>
     <tr class="coach-trows">
       <td><%= link_to c.id, c %></td>
       <td><%= c.first_name %></td>
       <td><%= c.last_name %></td>
+      <td><%= c.age %></td>
+      <td><%= c.gender.capitalize %></td>
+      <td>--</td>
+      <td>
+        <%= link_to coach_path(c.id) do %>
+          <i class="fas fa-user"></i>
+        <% end %>
+      </td>
+      <td>
+        <%= link_to edit_coach_path(c.id) do %>
+          <i class="fas fa-user-edit"></i>
+        <% end %>
+      </td>
+      <td>
+        <%= link_to coaches_path, method: :delete, remote: true, data: {confirm: 'are you sure?'} do %>
+          <i class="fas fa-user-times"></i>
+        <% end %>
+      </td>
     </tr>
     <% end %>
   </table>
-
 </div>
+
+<script src="/assets/coaches.js"></script>

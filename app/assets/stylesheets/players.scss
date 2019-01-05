@@ -13,7 +13,8 @@
   background-color: #618934 !important;
   border-color: #618934;
   left: 75%;
-  font-size: .8em;
+  font-size: 1em;
+  font-family: 'Oswald', sans-serif;
   padding: 5px;
     &:hover {
        background-color: #7D9E58 !important;
@@ -136,9 +137,4 @@
   color: black !important;
   border-color: black !important;
 
-}
-
-.player_id:hover {
-  color: #618934;
-  background-color: whitesmoke;
 }

@@ -10,6 +10,20 @@ $import: !important;
   justify-content: center;
 }
 
+.add-clinic-btn {
+  position: relative;
+  background-color: #618934 !important;
+  font-family: 'Oswald', sans-serif;
+  border-color: #618934;
+  font-size: 1em;
+  padding: 5px;
+    &:hover {
+       background-color: #7D9E58 !important;
+       color: white;
+       box-shadow: .5px 2px black !important;
+  }
+}
+
 .clinic-header {
   position: relative;
   left: 2.5pc;
@@ -89,8 +103,19 @@ $import: !important;
 }
 
 // DATA TABLE
+.wrapper {
+  padding: 8% 15%;
+}
+
+.clinic-table-head {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
 .clinics-table {
   width: 100%;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .clinics-table tr:nth-child(even) {

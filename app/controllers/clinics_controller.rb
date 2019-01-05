@@ -28,7 +28,8 @@ class ClinicsController < ApplicationController
   end
 
   def index
-    @clinic = Clinic.all
+    @clinic_all = Clinic.all
+    @clinic = Clinic.new
   end
 
   def destroy # DELETE object

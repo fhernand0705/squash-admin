@@ -1,20 +1,42 @@
-<div class="clinics-container">
-  <div class="row">
-    <div class="column">Clinics: 2019 Squash Season</div>
-      <!-- add cohort signup button -->
-    <div class="column">Testing</div>
+<%= render 'new' %>
+<!-- CLINICS TABLE -->
+
+<div class="wrapper">
+    <div class="row">
+    <div class="column clinic-table-head">Clinics</div>
+    <div class="column-6">
+      <button type="button" class="add-clinic-btn" onclick="clinicOpen()">Add Clinic</button>
+    </div>
   </div>
   <table class="clinics-table">
     <tr>
       <th>Id</th>
       <th>Name</th>
       <th>Hours</th>
+      <th>Profile</th>
+      <th>Edit</th>
+      <th>Remove</th>
     </tr>
-    <% @clinic.each do |c| %>
+    <% @clinic_all.each do |c| %>
     <tr class="clinic-trows">
       <td><%= link_to c.id, c %></td>
       <td><%= c.name %></td>
       <td><%= c.hours %></td>
+      <td>
+        <%= link_to clinic_path(c.id) do %>
+          <i class="fas fa-user"></i>
+        <% end %>
+      </td>
+      <td>
+        <%= link_to edit_clinic_path(c.id) do %>
+          <i class="fas fa-user-edit"></i>
+        <% end %>
+      </td>
+      <td>
+        <%= link_to clinics_path, method: :delete, remote: true, data: {confirm: 'are you sure?'} do %>
+          <i class="fas fa-user-times"></i>
+        <% end %>
+      </td>
     </tr>
     <% end %>
   </table>

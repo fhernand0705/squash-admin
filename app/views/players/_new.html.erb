@@ -14,7 +14,7 @@
          <%= f.text_field :last_name %><br>
          <label class="player-label" for="age">Age</label><br>
          <%= f.number_field :age %><br></br>
-         <%= f.select(:gender, ['--Sex--', 'Male', 'Female'], {}, {:class => "player-select-field"}) %><br>
+         <%= f.select(:gender, ['--Gender--', 'Male', 'Female'], {}, {:class => "player-select-field"}) %><br>
          <%= f.collection_select  :cohort_ids,
                                    Cohort.all,
                                   :id,
