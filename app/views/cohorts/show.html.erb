@@ -1,4 +1,31 @@
-<h2><%= @cohort.name %></h2>
+<%= render 'players/new' %>
+
+<div class="profile-wrapper">
+  <div class="row">
+    <div class="column cohort-table-head"><%= @cohort.name %></div>
+    <div class="column-6">
+      <button type="button" class="add-player-btn" onclick="playerOpen()">Add Cohort</button>
+    </div>
+  </div>
+  <table class="cohort-table">
+    <tr>
+      <th>Name</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Coach</th>
+    </tr>
+    <% @cohort_all.each do |c| %>
+    <tr class="cohort-trows">
+      <td><%= link_to c.name, c %></td>
+      <td><%= c.start_date %></td>
+      <td><%= c.end_date %></td>
+      <td><%= c.coach.try(:last_name) %></td>
+    </tr>
+    <% end %>
+  </table>
+
+
+
 <p>
   Start Date: <%= @cohort.start_date %><br>
   End Date: <%= @cohort.end_date %>

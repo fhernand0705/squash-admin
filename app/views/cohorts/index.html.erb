@@ -2,12 +2,12 @@
 
 <div class="wrapper">
   <div class="row">
-    <div class="column cohort-table-head">Cohorts</div>
+    <div class="column cohorts-table-head">Cohorts</div>
     <div class="column-6">
       <button type="button" class="add-cohort-btn" onclick="cohortOpen()">Add Cohort</button>
     </div>
   </div>
-  <table class="cohort-table">
+  <table class="cohorts-table">
     <tr>
       <th>Name</th>
       <th>Start Date</th>
@@ -15,7 +15,7 @@
       <th>Coach</th>
     </tr>
     <% @cohort_all.each do |c| %>
-    <tr class="cohort-trows">
+    <tr class="cohorts-trows">
       <td><%= link_to c.name, c %></td>
       <td><%= c.start_date %></td>
       <td><%= c.end_date %></td>

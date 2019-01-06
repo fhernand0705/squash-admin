@@ -113,29 +113,30 @@
   }
 }
 
-// DATA TABLE
+// ALL COHORTS TABLE
 .wrapper {
   padding: 10% 15%;
 }
 
-.cohort-table-head {
+.cohorts-table-head {
   font-size: 2em;
   font-weight: bold;
 }
 
-.cohort-table {
+.cohorts-table {
   min-width: 115%;
   min-height: 100%;
   background-color: white;
   border-radius: 5px;
 }
 
-.cohort-table tr:nth-child(even) {
+.cohorts-table tr:nth-child(even) {
   background-color: #E8E8E8;
 }
 
-.cohort-trows, a, td, th {
+.cohorts-trows, a, td, th {
   color: black !important;
   border-color: black !important;
-
 }
+
+// PROFILE TABLE
