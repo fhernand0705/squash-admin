@@ -139,4 +139,51 @@
   border-color: black !important;
 }
 
-// PROFILE TABLE
+// PROFILE
+.profile-wrapper {
+  padding: 11% 13.5%;
+}
+
+.wrapper-card {
+  min-width: 116.5%;
+}
+
+.cohort-card {
+  position: relative;
+  float: right;
+  width: 25%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+  0 11px 6px -7px rgba(43,43,43,0.1);
+}
+
+.cohort-card-name {
+  display: grid;
+  justify-content: center;
+}
+
+.hr-card {
+  border-color: black !important;
+  margin: 1.5rem 3rem !important;
+}
+
+.row-card {
+  margin-top: 1.5rem;
+}
+
+.table-wrapper {
+  width: 85%;
+}
+
+.cohort-table {
+  background-color: white;
+  border-radius: 5px;
+  min-width: 100%;
+  box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+  0 11px 6px -7px rgba(43,43,43,0.1);
+}
+
+.cohort-table tr:nth-child(even) {
+  background-color: #E8E8E8;
+}

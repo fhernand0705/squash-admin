@@ -1,47 +1,62 @@
 <%= render 'players/new' %>
 
 <div class="profile-wrapper">
-  <div class="row">
-    <div class="column cohort-table-head"><%= @cohort.name %></div>
-    <div class="column-6">
-      <button type="button" class="add-player-btn" onclick="playerOpen()">Add Cohort</button>
+
+<!-- COHORT PROFILE CARD -->
+<div class="wrapper-card">
+  <div class="cohort-card">
+    <div class="row-card">
+      <div class="column cohort-card-name"><h3><%= @cohort.name %></h3></div>
+    </div>
+    <hr class="hr-card">
+    <div class="row-card">
+      <div class="column">
+        Dates: <%= @cohort.start_date %>––<%= @cohort.end_date %>
+      </div>
+    </div>
+    <div class="row-card">
+      <div class="column">Coach: <%= @cohort.coach.coach_full_name.upcase %></div>
+    </div>
+    <div class="row-card">
+      <div class="column">Clinic: <%= @cohort.clinic.name.upcase %></div>
+    </div>
+    <div class="row-card">
+      <div class="column">
+        <%= link_to "Edit", edit_cohort_path %>
+        <%= link_to "Delete", @cohort, method: :delete,
+                                       remote: true,
+                                       data: {confirm: 'are you sure?'} %>
+      </div>
     </div>
   </div>
-  <table class="cohort-table">
-    <tr>
-      <th>Name</th>
-      <th>Start Date</th>
-      <th>End Date</th>
-      <th>Coach</th>
-    </tr>
-    <% @cohort_all.each do |c| %>
-    <tr class="cohort-trows">
-      <td><%= link_to c.name, c %></td>
-      <td><%= c.start_date %></td>
-      <td><%= c.end_date %></td>
-      <td><%= c.coach.try(:last_name) %></td>
-    </tr>
-    <% end %>
-  </table>
+</div>
 
+<!-- (COHORT) STUDENTS TABLE -->
 
+<div class="table-wrapper">
+    <div class="row">
+      <div class="column cohort-table-head"><h3>Players</h3></div>
+      <div class="column">
+        <button type="button" class="add-player-btn" onclick="playerOpen()">Add Player</button>
+      </div>
+    </div>
+    <table class="cohort-table">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+      </tr>
+      <% @cohort.players.each do |p| %>
+      <tr class="cohort-trows">
+        <td><%= p.first_name %></td>
+        <td><%= p.last_name %></td>
+        <td><%= p.age %></td>
+        <td><%= p.gender %></td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
 
-<p>
-  Start Date: <%= @cohort.start_date %><br>
-  End Date: <%= @cohort.end_date %>
-</p>
-
-<h3>Clinic</h3>
-<p><%= @cohort.clinic.name %></p>
-
-<h3>Coach's Name</h3>
-<p><%= @cohort.coach.coach_full_name %></p>
-
-<% @cohort.players.each do |p| %>
-
-<p><%= p.player_full_name %></p>
-
-<% end %>
-
-<%= link_to "Edit", edit_cohort_path %><br>
-<%= link_to "Delete", @cohort, method: :delete, remote: true, data: {confirm: 'are you sure?'} %>
+<script src="/assets/players.js"></script>

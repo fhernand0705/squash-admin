@@ -16,6 +16,7 @@ class CohortsController < ApplicationController
 
   def show # DISPLAYS cohort information
     @cohort = Cohort.find(params[:id])
+    @player = Player.new
   end
 
   def edit # READ the edit form
