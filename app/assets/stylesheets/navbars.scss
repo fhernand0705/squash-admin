@@ -1,11 +1,17 @@
+.nav-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 // TOP BAR
 #top-bar {
   display: grid;
   width: 100%;
-  min-height: 15%;
+  height: 15%;
   background-color: yellow;
   position: fixed;
-  top: 0;
+
 }
 
 .logo {

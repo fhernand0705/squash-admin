@@ -1,0 +1,27 @@
+<div class="modal-container">
+  <div id="player-modal">
+
+     <div class="add-players-body">
+       <h2 class="player-header">
+         Add Players
+       </h2>
+       <div class="player-form">
+         <%= form_for @cohort do |f| %>
+         <%= f.collection_select :player_ids,
+                                  Player.all,
+                                 :id,
+                                 :player_full_name,
+                                 {:prompt => '--Add Player--'},
+                                 {:multiple => true,
+                                  :class => "players-select"} %>
+
+       </div>
+       <div>
+         <%= f.submit "Add", class: "player-submit-btn" %><br>
+         <%= link_to 'Cancel', @cohort, class: "players-cancel" %>
+       </div>
+       <% end %>
+
+    </div>
+  </div>
+</div>

@@ -172,6 +172,8 @@
   margin-top: 1.5rem;
 }
 
+
+// PLAYERS TABLE
 .table-wrapper {
   width: 85%;
 }
@@ -186,4 +188,40 @@
 
 .cohort-table tr:nth-child(even) {
   background-color: #E8E8E8;
+}
+
+// ADD PLAYERS MODAL
+.add-players-body {
+  position: relative;
+  background-color: red;
+  top: 25%;
+  height: 30%;
+  width: 125%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+  0 11px 6px -7px rgba(43,43,43,0.1);
+  -webkit-transition: all .7s ease-in;
+  opacity: 1;
+}
+
+.players-select {
+  position: relative;
+  width: fit-content !important;
+  margin-bottom: 2em;
+  padding-right: 1.5pc;
+  border-color: black !important;
+  color: whitesmoke !important;
+  height: 50%;
+  right: 10px;
+}
+
+.players-cancel {
+  position: relative;
+  left: 5em;
+  color: black !important;
+  font-weight: bold;
+    &:hover {
+      color: whitesmoke !important;
+      font-weight: bold;
+  }
 }

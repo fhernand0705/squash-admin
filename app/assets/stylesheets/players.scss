@@ -55,7 +55,8 @@
   height: 73%;
   width: 125%;
   border-radius: 10px;
-  box-shadow: 2px 2px;
+  box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+  0 11px 6px -7px rgba(43,43,43,0.1);
   -webkit-transition: all .7s ease-in;
   opacity: 0;
 }
@@ -136,5 +137,10 @@
 .player-trows, a, td, th {
   color: black !important;
   border-color: black !important;
+
+}
+
+// PLAYER PROFILE
+.player-profile {
 
 }

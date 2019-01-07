@@ -13,13 +13,31 @@
       <th>Start Date</th>
       <th>End Date</th>
       <th>Coach</th>
+      <th>Profile</th>
+      <th>Edit</th>
+      <th>Remove</th>
     </tr>
     <% @cohort_all.each do |c| %>
     <tr class="cohorts-trows">
-      <td><%= link_to c.name, c %></td>
+      <td><%= c.name %></td>
       <td><%= c.start_date %></td>
       <td><%= c.end_date %></td>
       <td><%= c.coach.try(:last_name) %></td>
+      <td>
+        <%= link_to cohort_path(c.id) do %>
+          <i class="fas fa-user"></i>
+        <% end %>
+      </td>
+      <td>
+        <%= link_to edit_cohort_path(c.id) do %>
+          <i class="fas fa-user-edit"></i>
+        <% end %>
+      </td>
+      <td>
+        <%= link_to cohorts_path, method: :delete, remote: true, data: {confirm: 'are you sure?'} do %>
+          <i class="fas fa-user-times"></i>
+        <% end %>
+      </td>
     </tr>
     <% end %>
   </table>

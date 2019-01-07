@@ -1,4 +1,4 @@
-<%= render 'players/new' %>
+<%= render 'add_player' %>
 
 <div class="profile-wrapper">
 
@@ -46,13 +46,31 @@
         <th>Last Name</th>
         <th>Age</th>
         <th>Gender</th>
+        <th>Profile</th>
+        <th>Edit</th>
+        <th>Remove</th>
       </tr>
       <% @cohort.players.each do |p| %>
       <tr class="cohort-trows">
         <td><%= p.first_name %></td>
         <td><%= p.last_name %></td>
         <td><%= p.age %></td>
-        <td><%= p.gender %></td>
+        <td><%= p.gender.capitalize %></td>
+        <td>
+          <%= link_to player_path(p.id) do %>
+            <i class="fas fa-user"></i>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to edit_player_path(p.id) do %>
+            <i class="fas fa-user-edit"></i>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to players_path, method: :delete, remote: true, data: {confirm: 'are you sure?'} do %>
+            <i class="fas fa-user-times"></i>
+          <% end %>
+        </td>
       </tr>
       <% end %>
     </table>

@@ -3,13 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 // CLINIC SIGNUP MODAL
-$import: !important;
-
 .main-container {
   display: flex;
   justify-content: center;
 }
 
+//TRIGGER BTN
 .add-clinic-btn {
   position: relative;
   background-color: #618934 !important;
@@ -29,13 +28,13 @@ $import: !important;
   left: 2.5pc;
   font-size: 1.5pc;
   font-weight: bold;
-  color: whitesmoke $import;
+  color: whitesmoke !important;
 }
 
 .hr-break-4 {
   width: 99%;
   position: absolute;
-  border-color: black $import;
+  border-color: black !important;
   top: 1pc;
 }
 
@@ -72,9 +71,9 @@ $import: !important;
 }
 
 .clinic-body input {
-  width: fit-content $import;
-  margin-bottom: 1 $import;
-  border-color: black $import;
+  width: fit-content !important;
+  margin-bottom: 1 !important;
+  border-color: black !important;
   border-radius: 5px;
 }
 
@@ -82,13 +81,13 @@ $import: !important;
   position: relative;
   left: 3.8pc;
   height: 2pc;
-  font-size: .8pc $import;
-  line-height: 0 $import;
-  background-color: black $import;
-  border-color: transparent $import;
+  font-size: .8pc !important;
+  line-height: 0 !important;
+  background-color: black !important;
+  border-color: transparent !important;
     &:hover {
-      background-color: white $import;
-      color: black $import;
+      background-color: white !important;
+      color: black !important;
   }
 }
 
@@ -96,7 +95,7 @@ $import: !important;
   position: relative;
   left: 6pc;
   top: .3pc;
-  color: black $import;
+  color: black !important;
     &:hover {
       opacity: .5;
   }
@@ -104,11 +103,11 @@ $import: !important;
 
 // DATA TABLE
 .wrapper {
-  padding: 8% 15%;
+  padding: 10% 15%;
 }
 
 .clinic-table-head {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -123,7 +122,7 @@ $import: !important;
 }
 
 .clinic-trows, a, td, th {
-  color: black $import;
-  border-color: black $import;
+  color: black !important;
+  border-color: black !important;
 
 }
