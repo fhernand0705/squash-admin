@@ -1,11 +1,10 @@
-<!-- COHORT (CREATE) MODAL -->
-
+<!-- COHORT (EDIT) MODAL -->
 <div class="modal-container">
    <div id="cohort-modal">
 
      <div class="cohort-body">
         <h1 class="cohort-header">
-          Create New Cohort
+          Edit Cohort
         </h1>
         <hr class="hr-break-2">
      <div class="cohort-form">
@@ -38,8 +37,8 @@
     </div><br>
 
     <div>
-      <%= f.submit "Create", class: "cohort-submit-btn" %><br>
-      <%= link_to 'Cancel', cohorts_path, class: "cancel-link-2" %>
+      <%= f.submit "Update", class: "cohort-submit-btn" %><br>
+      <%= link_to "Cancel", cohorts_path, class: "cancel-link-2" %>
     </div>
       <% end %>
 

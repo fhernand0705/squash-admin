@@ -1,4 +1,5 @@
 <%= render 'add_player' %>
+<%= render 'edit' %>
 
 <div class="profile-wrapper">
 
@@ -23,7 +24,7 @@
     </div>
     <div class="row-card">
       <div class="column">
-        <%= link_to "Edit", edit_cohort_path %>
+        <button type="button" class="add-cohort-btn" onclick="cohortOpen()">Edit</button>
         <%= link_to "Delete", @cohort, method: :delete,
                                        remote: true,
                                        data: {confirm: 'are you sure?'} %>
@@ -79,3 +80,4 @@
 </div>
 
 <script src="/assets/players.js"></script>
+<script src="/assets/cohorts.js"></script>
