@@ -49,7 +49,6 @@
         <th>Age</th>
         <th>Gender</th>
         <th>Profile</th>
-        <th>Edit</th>
         <th>Remove</th>
       </tr>
         <% @cohort.players.each do |p| %>
@@ -61,11 +60,6 @@
         <td>
           <%= link_to player_path(p.id) do %>
             <i class="fas fa-user"></i>
-          <% end %>
-        </td>
-        <td>
-          <%= link_to edit_player_path(p.id) do %>
-            <i class="fas fa-user-edit"></i>
           <% end %>
         </td>
         <td>

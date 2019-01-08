@@ -47,7 +47,7 @@
   background-color: rgba(0,0,0,0.4);
 }
 
-.cohort-body {
+#cohort-body {
   position: relative;
   background-color: #F4F4F4;
   top: 4.5em;
@@ -56,6 +56,7 @@
   border-radius: 10px;
   box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
   0 18px 6px -7px rgba(43,43,43,0.1) !important;
+  opacity: 1;
 }
 
 .cohort-form {
@@ -64,7 +65,7 @@
   color: #2D2A1B;
 }
 
-.cohort-body input {
+#cohort-body input {
   width: fit-content !important;
   margin-bottom: 0 !important;
   // border-color: #9E2504 !important;
@@ -179,7 +180,6 @@
   margin-top: 1.5rem;
 }
 
-
 // PLAYERS TABLE
 .table-wrapper {
   width: 85%;
@@ -197,7 +197,7 @@
   background-color: #E8E8E8;
 }
 
-// ADD PLAYERS MODAL
+// PLAYERS (ADD) MODAL
 .add-players-btn {
   position: relative;
   background-color: #618934 !important;
@@ -209,7 +209,8 @@
     &:hover {
        background-color: #7D9E58 !important;
        color: white;
-       box-shadow: .5px 2px black !important;
+       box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+       0 13px 6px -7px rgba(43,43,43,0.1) !important;
   }
 }
 

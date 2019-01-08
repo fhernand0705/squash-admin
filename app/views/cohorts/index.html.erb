@@ -9,19 +9,23 @@
   </div>
   <table class="cohorts-table">
     <tr>
+      <th>ID</th>
       <th>Name</th>
       <th>Start Date</th>
       <th>End Date</th>
       <th>Coach</th>
+      <th>Clinic</th>
       <th>Profile</th>
       <th>Remove</th>
     </tr>
     <% @cohort_all.each do |c| %>
     <tr class="cohorts-trows">
+      <td><%= c.id %></td>
       <td><%= c.name %></td>
       <td><%= c.start_date %></td>
       <td><%= c.end_date %></td>
       <td><%= c.coach.try(:last_name) %></td>
+      <td><%= c.clinic.try(:name) %></td>
       <td>
         <%= link_to cohort_path(c.id) do %>
           <i class="fas fa-chalkboard-teacher"></i>
@@ -38,4 +42,20 @@
 
 </div>
 
-<script src="/assets/cohorts.js"></script>
+<script>
+  var cohort_modal = document.getElementById('cohort-modal');
+  var side_bar = document.getElementById('side-bar');
+  var cohort_body = document.getElementById('cohort-body');
+
+  function cohortOpen() {
+   // if (cohort_body.style.opacity == 0) {
+   //   cohort_body.style.opacity = "1";
+   // } else {
+   //   (cohort_body.style.opacity = "0");
+   // }
+   cohort_modal.style.display = "grid";
+   cohort_modal.style.justifyContent = "center";
+   side_bar.style.zIndex = "0";
+  };
+
+</script>
