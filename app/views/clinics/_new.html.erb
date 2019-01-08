@@ -1,24 +1,24 @@
+<!-- CREATE CLINIC MODAL -->
+
 <div class="modal-container">
   <div id="clinic-modal">
 
    <div class="clinic-body">
-      <h2 class="clinic-header">
-       Clinic Signup
-      </h2>
+      <h2 class="clinic-header">Create Clinic</h2>
       <hr class="hr-break-4">
       <div class="clinic-form">
-       <%= form_for @clinic do |f| %>
-       <label class="clinic-label" for="name">Clinic Name</label><br>
-       <%= f.text_field :name %><br>
-       <label class="clinic-label" for="hours">Hours</label><br>
-       <%= f.text_field :hours %><br>
+        <%= form_for @clinic do |f| %>
+        <label class="clinic-label" for="name">Clinic Name</label><br>
+        <%= f.text_field :name %><br>
+        <label class="clinic-label" for="hours">Hours</label><br>
+        <%= f.text_field :hours %><br>
       </div><br>
 
       <div>
-       <%= f.submit "Create", class: "clinic-submit-btn" %><br>
-       <%= link_to 'Cancel', root_path, class: "cancel-link-4" %>
+        <%= f.submit "Create", class: "clinic-submit-btn" %><br>
+        <%= link_to 'Cancel', clinics_path, class: "cancel-link-4" %>
       </div>
-       <% end %>
+        <% end %>
 
     </div>
   </div>

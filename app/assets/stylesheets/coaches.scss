@@ -18,7 +18,8 @@
     &:hover {
        background-color: #7D9E58 !important;
        color: white;
-       box-shadow: .5px 2px black !important;
+       box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+       0 11px 6px -7px rgba(43,43,43,0.1) !important;
   }
 }
 
@@ -125,10 +126,12 @@
   width: 100%;
   background-color: white;
   border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+  0 15px 6px -7px rgba(43,43,43,0.1);
 }
 
 .coaches-table tr:nth-child(even) {
-  background-color: #E8D5AB;
+  background-color: #E8C547;
 }
 
 .coach-trows, a, td, th {

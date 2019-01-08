@@ -14,7 +14,6 @@
       <th>End Date</th>
       <th>Coach</th>
       <th>Profile</th>
-      <th>Edit</th>
       <th>Remove</th>
     </tr>
     <% @cohort_all.each do |c| %>
@@ -26,11 +25,6 @@
       <td>
         <%= link_to cohort_path(c.id) do %>
           <i class="fas fa-chalkboard-teacher"></i>
-        <% end %>
-      </td>
-      <td>
-        <%= link_to edit_cohort_path(c.id) do %>
-          <i class="fas fa-user-edit"></i>
         <% end %>
       </td>
       <td>

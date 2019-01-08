@@ -1,3 +1,5 @@
+<%= render 'edit' %>
+
 <div class="profile-wrapper">
   <!-- PLAYER PROFILE CARD -->
   <div class="wrapper-card">
@@ -5,7 +7,9 @@
       <div class="row-card">
         <div class="column player-card-name"><h3><%= @player.player_full_name %></h3></div>
       </div>
+
       <hr class="hr-card">
+
       <div class="row-card">
         <div class="column">Age: <%= @player.age %></div>
       </div>
@@ -22,12 +26,14 @@
       </div>
       <div class="row-card">
         <div class="column">
-          <%= link_to "Edit", edit_cohort_path %>
+          <button type="button" class="add-player-btn" onclick="playerOpen()">Edit</button>
           <%= link_to "Delete", @player, method: :delete,
-          remote: true,
-          data: {confirm: 'are you sure?'} %>
+                                         remote: true,
+                                         data: {confirm: 'are you sure?'} %>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<script src="/assets/players.js"></script>

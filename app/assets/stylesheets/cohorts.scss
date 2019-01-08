@@ -17,23 +17,23 @@
   padding: 5px;
     &:hover {
        background-color: #7D9E58 !important;
-       color: white;
-       box-shadow: .5px 2px black !important;
+       color: whitesmoke;
+       box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+       0 13px 6px -7px rgba(43,43,43,0.1) !important;
   }
 }
 
 .cohort-header {
-  padding-right: 1.5em;
-  padding-left: 1.5em;
+  text-align: center;
   font-size: 1.5em;
   font-weight: bold;
-  color: whitesmoke !important;
+  color: #2D2A1B !important;
 }
 
 .hr-break-2 {
   width: 99.5%;
   position: absolute;
-  border-color: black !important;
+  border-color: #2D2A1B !important;
   top: 1pc;
 }
 
@@ -49,25 +49,30 @@
 
 .cohort-body {
   position: relative;
-  background-color: red;
-  top: 3.5pc;
+  background-color: #F4F4F4;
+  top: 4.5em;
   height: 73%;
-  width: 100%;
+  min-width: 130%;
   border-radius: 10px;
-  box-shadow: 2px 2px;
+  box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+  0 18px 6px -7px rgba(43,43,43,0.1) !important;
 }
 
 .cohort-form {
   position: relative;
-  left: 3.5pc;
-  color: whitesmoke;
+  left: 2.5em;
+  color: #2D2A1B;
 }
 
 .cohort-body input {
   width: fit-content !important;
   margin-bottom: 0 !important;
-  border-color: black !important;
+  // border-color: #9E2504 !important;
+  background-color: #F4F4F4;
   border-radius: 5px;
+    &:hover {
+      border-color: #2D2A1B !important;
+  }
 }
 
 .cohort-label {
@@ -80,34 +85,35 @@
   width: fit-content !important;
   margin-bottom: .5pc;
   padding-right: 1.5pc;
-  border-color: black !important;
-  color: whitesmoke !important;
+  border-color: #35393A !important;
+  color: #2D2A1B !important;
 }
 
 
 .cohort-submit-btn {
   position: relative;
-  left: 5pc;
+  left: 5em;
   margin-top: -10px;
   height: 2pc;
   font-size: .8pc !important;
   line-height: 0 !important;
-  background-color: black !important;
-  border-color: transparent !important;
+  color: #2D2A1B !important;
+  border-color: #F4F4F4 !important;
+  background-color: #F4F4F4 !important;
     &:hover {
-      background-color: white !important;
-      color: black !important;
+      background-color: #E8C547 !important;
+      color: #2D2A1B !important;
   }
 }
 
 .cancel-link-2 {
   position: relative;
-  left: 7pc;
+  left: 6.5em;
   top: .5pc;
   color: black !important;
   font-weight: bold;
     &:hover {
-      color: whitesmoke !important;
+      color: #F4F4F4 !important;
       font-weight: bold;
   }
 }
@@ -127,10 +133,12 @@
   min-height: 100%;
   background-color: white;
   border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+  0 13px 6px -7px rgba(43,43,43,0.1);
 }
 
 .cohorts-table tr:nth-child(even) {
-  background-color: #E8D5AB;
+  background-color: #E8C547;
 }
 
 .cohorts-trows, a, td, th {

@@ -1,0 +1,35 @@
+<!-- COACH EDIT MODAL -->
+
+<div class="modal-container">
+  <div id="coach-modal">
+
+    <div class="coach-body">
+      <h2 class="coach-header">Add Coach</h2>
+      <hr class="hr-break-3">
+      <div class="coach-form">
+        <%= form_for @coach do |f| %>
+        <label class="coach-label" for="first_name">First Name</label><br>
+        <%= f.text_field :first_name %><br>
+        <label class="coach-label" for="last_name">Last Name</label><br>
+        <%= f.text_field :last_name %><br>
+        <label class="coach-label" for="age">Age</label><br>
+        <%= f.number_field :age %><br>
+        <label class="coach-label" for="salary">Salary</label><br>
+        <%= f.number_field :salary %><br>
+        <%= f.select(:gender, ['--Gender--', 'Male', 'Female'], {}, {:class => "coach-select-field"}) %><br>
+        <%= f.select(:education, ['--Highest Education--',
+                                  'High School',
+                                  'College',
+                                  'Masters',
+                                  'PHD'], {}, {:class => "coach-select-field"}) %>
+      </div><br>
+
+      <div>
+        <%= f.submit "Update", class: "coach-submit-btn" %><br>
+        <%= link_to 'Cancel', @coach, class: "cancel-link-3" %>
+      </div>
+      <% end %>
+
+    </div>
+  </div>
+</div>

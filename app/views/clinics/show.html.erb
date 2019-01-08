@@ -1,3 +1,5 @@
+<%= render 'edit' %>
+
 <div class="profile-wrapper">
   <!-- PLAYER PROFILE CARD -->
   <div class="wrapper-card">
@@ -14,7 +16,7 @@
       </div>
       <div class="row-card">
         <div class="column">
-          <%= link_to "Edit", edit_cohort_path %>
+          <button type="button" class="add-clinic-btn" onclick="clinicOpen()">Edit</button>
           <%= link_to "Delete", @player, method: :delete,
                                          remote: true,
                                          data: {confirm: 'are you sure?'} %>
@@ -23,3 +25,5 @@
     </div>
   </div>
 </div>
+
+<script src="/assets/clinics.js"></script>
