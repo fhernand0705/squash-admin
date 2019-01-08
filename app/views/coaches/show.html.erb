@@ -1,9 +1,39 @@
-<h2>Added New Coach</h2>
-
- <h5>First Name:</h5>  <%= @coach.first_name %><br>
- <h5>Age:</h5> <%= @coach.age %><br>
- <h5>Sex:</h5> <%= @coach.gender %><br>
- <h5>Highest Education:</h5> <%= @coach.education %><br></br>
-
- <%= link_to 'Edit Profile', edit_coach_path %>
- <%= link_to 'Delete', @coach, method: :delete, remote: true, data: {confirm: 'Are you sure?'} %>
+<div class="profile-wrapper">
+  <!-- PLAYER PROFILE CARD -->
+  <div class="wrapper-card">
+    <div class="coach-card">
+      <div class="row-card">
+        <div class="column coach-card-name"><h3><%= @coach.coach_full_name %></h3></div>
+      </div>
+      <hr class="hr-card">
+      <div class="row-card">
+        <div class="column">Role: Coach</div>
+      </div>
+      <div class="row-card">
+        <div class="column">Age: <%= @coach.age %></div>
+      </div>
+      <div class="row-card">
+        <div class="column">Gender: <%= @coach.gender.capitalize %></div>
+      </div>
+      <div class="row-card">
+        <div class="column">Highest Education: <%= @coach.education %></div>
+      </div>
+      <div class="row-card">
+        <div class="column">Salary: <%= @coach.salary %></div>
+      </div>
+      <div class="row-card">
+        <% @coach.cohorts.each do |c| %>
+          <div class="column">Cohort: <%= c.name %></div>
+        <% end %>
+      </div>
+      <div class="row-card">
+        <div class="column">
+          <%= link_to "Edit", edit_coach_path %>
+          <%= link_to "Delete", @coach, method: :delete,
+                                         remote: true,
+                                         data: {confirm: 'are you sure?'} %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

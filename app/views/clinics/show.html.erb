@@ -1,7 +1,25 @@
-<h2>Added New Clinic</h2>
-
- <h4>Name:</h4><span><%= @clinic.name %></span><br>
- <h4>Hours:</h4><%= @clinic.hours %><br></br>
-
- <%= link_to 'Edit', edit_clinic_path %>
- <%= link_to 'Delete', @clinic, method: :delete, remote: true, data: {confirm: 'Are you sure?'} %>
+<div class="profile-wrapper">
+  <!-- PLAYER PROFILE CARD -->
+  <div class="wrapper-card">
+    <div class="clinic-card">
+      <div class="row-card">
+        <div class="column clinic-card-name"><h3><%= @clinic.name %></h3></div>
+      </div>
+      <hr class="hr-card">
+      <div class="row-card">
+        <div class="column">Status: Clinic</div>
+      </div>
+      <div class="row-card">
+        <div class="column">Hours: <%= @clinic.hours %></div>
+      </div>
+      <div class="row-card">
+        <div class="column">
+          <%= link_to "Edit", edit_cohort_path %>
+          <%= link_to "Delete", @player, method: :delete,
+                                         remote: true,
+                                         data: {confirm: 'are you sure?'} %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

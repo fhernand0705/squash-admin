@@ -16,7 +16,7 @@ class CohortsController < ApplicationController
 
   def show # DISPLAYS cohort/player information
     @cohort = Cohort.find(params[:id])
-    
+
   end
 
   def edit # READ the edit form
@@ -27,6 +27,9 @@ class CohortsController < ApplicationController
     @cohort = Cohort.find(params[:id])
     @cohort.update(cohort_params)
     redirect_to @cohort
+    respond_to do |format| 
+      format.js
+    end
   end
 
   def index # DISPLAYS all cohorts

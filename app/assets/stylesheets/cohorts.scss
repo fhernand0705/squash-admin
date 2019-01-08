@@ -12,7 +12,6 @@
   position: relative;
   background-color: #618934 !important;
   border-color: #618934;
-  left: 85%;
   font-family: 'Oswald', sans-serif;
   font-size: 1em;
   padding: 5px;
@@ -124,7 +123,7 @@
 }
 
 .cohorts-table {
-  min-width: 115%;
+  min-width: 100%;
   min-height: 100%;
   background-color: white;
   border-radius: 5px;
@@ -178,7 +177,7 @@
   width: 85%;
 }
 
-.cohort-table {
+.players-table {
   background-color: white;
   border-radius: 5px;
   min-width: 100%;
@@ -186,11 +185,26 @@
   0 11px 6px -7px rgba(43,43,43,0.1);
 }
 
-.cohort-table tr:nth-child(even) {
+.players-table tr:nth-child(even) {
   background-color: #E8E8E8;
 }
 
 // ADD PLAYERS MODAL
+.add-players-btn {
+  position: relative;
+  background-color: #618934 !important;
+  border-color: #618934;
+  left: 78%;
+  font-size: 1em;
+  font-family: 'Oswald', sans-serif;
+  padding: 5px;
+    &:hover {
+       background-color: #7D9E58 !important;
+       color: white;
+       box-shadow: .5px 2px black !important;
+  }
+}
+
 .add-players-body {
   position: relative;
   background-color: red;

@@ -1,17 +1,13 @@
-<div class="main-panel">
-  <div class="profile-wrapper">
-
+<div class="profile-wrapper">
   <!-- PLAYER PROFILE CARD -->
   <div class="wrapper-card">
-    <div class="cohort-card">
+    <div class="player-card">
       <div class="row-card">
-        <div class="column cohort-card-name"><h3><%= @player.player_full_name %></h3></div>
+        <div class="column player-card-name"><h3><%= @player.player_full_name %></h3></div>
       </div>
       <hr class="hr-card">
       <div class="row-card">
-        <div class="column">
-          Age: <%= @player.age %>
-        </div>
+        <div class="column">Age: <%= @player.age %></div>
       </div>
       <div class="row-card">
         <div class="column">Gender: <%= @player.gender %></div>
@@ -20,11 +16,10 @@
         <div class="column">Highest Education: <%= @player.education %></div>
       </div>
       <div class="row-card">
-        <div class="column">Cohort: <%= @player.cohorts.each do |c| %>
-          <p><%= c.name %></p>
-        </div>
+        <% @player.cohorts.each do |c| %>
+          <div class="column">Cohort: <%= c.name %></div>
+        <% end %>
       </div>
-      <% end %>
       <div class="row-card">
         <div class="column">
           <%= link_to "Edit", edit_cohort_path %>
@@ -33,7 +28,6 @@
           data: {confirm: 'are you sure?'} %>
         </div>
       </div>
-     </div>
-   </div>
+    </div>
   </div>
-  </div>
+</div>

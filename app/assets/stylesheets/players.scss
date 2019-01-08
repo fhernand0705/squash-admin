@@ -10,9 +10,9 @@
 
 .add-player-btn {
   position: relative;
+  left: 0;
   background-color: #618934 !important;
   border-color: #618934;
-  left: 75%;
   font-size: 1em;
   font-family: 'Oswald', sans-serif;
   padding: 5px;
@@ -125,7 +125,7 @@
 }
 
 .players-table {
-  width: 110%;
+  width: 100%;
   background-color: white;
   border-radius: 5px;
 }
@@ -137,10 +137,20 @@
 .player-trows, a, td, th {
   color: black !important;
   border-color: black !important;
-
 }
 
 // PLAYER PROFILE
-.player-profile {
+.player-card {
+  position: relative;
+  float: right;
+  width: 25%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+  0 11px 6px -7px rgba(43,43,43,0.1);
+}
 
+.player-card-name {
+  display: grid;
+  justify-content: center;
 }

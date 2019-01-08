@@ -6,7 +6,7 @@
          Add Players
        </h2>
        <div class="player-form">
-         <%= form_for @cohort do |f| %>
+         <%= form_for @cohort, :method => :PUT, remote: true do |f| %>
          <%= f.collection_select :player_ids,
                                   Player.all,
                                  :id,
