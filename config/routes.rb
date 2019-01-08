@@ -1,14 +1,22 @@
 Rails.application.routes.draw do
-  get 'users/new'
-  get 'users/show'
-  get 'users/edit'
+
   get 'sessions/new'
   resources :players
   resources :coaches
   resources :clinics
   resources :cohorts
+  resources :users
 
   root 'pages#home'
+
+  # USER routes
+  get 'users/new', to: 'users#create'
+  patch 'users/:id', to: 'users#update'
+
+  # SESSIONS routes
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
 
   # COHORT (CRUD) routes
   get 'cohorts/new', to: 'cohorts#create'

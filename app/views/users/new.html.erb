@@ -1,2 +1,17 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h1>Sign Up</h1>
+
+<!-- add user modal feature -->
+
+<%= form_for @user do |f| %>
+  <label for="">First Name</label><br>
+  <%= f.text_field :first_name %><br>
+  <label for="">Last Name</label><br>
+  <%= f.text_field :last_name %><br>
+  <label for="">Email</label><br>
+  <%= f.email_field :email %><br>
+  <label for="">Password</label><br>
+  <%= f.password_field :password %><br>
+  <div>
+    <%= f.submit 'Submit' %>
+  </div>
+<% end %>

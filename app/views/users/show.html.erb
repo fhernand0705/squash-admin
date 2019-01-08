@@ -1,2 +1,29 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<!-- add render 'edit' -->
+
+<div class="profile-wrapper">
+  <!-- PLAYER PROFILE CARD -->
+  <div class="wrapper-card">
+    <div class="player-card">
+      <div class="row-card">
+        <div class="column player-card-name"><h3><%= @user.user_name %></h3></div>
+      </div>
+
+      <hr class="hr-card">
+
+      <div class="row-card">
+        <div class="column">Email: <%= @user.email %></div>
+      </div>
+
+      <div class="row-card">
+        <div class="column">
+          <button type="button" class="add-player-btn" onclick="playerOpen()">Edit</button>
+          <%= link_to "Delete", @player, method: :delete,
+                                         remote: true,
+                                         data: {confirm: 'are you sure?'} %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/assets/users.js"></script>
