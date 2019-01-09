@@ -17,7 +17,7 @@
   padding: 5px;
     &:hover {
        background-color: #7D9E58 !important;
-       color: white;
+       color: #F4F4F4;
        box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
        0 11px 6px -7px rgba(43,43,43,0.1) !important;
   }
@@ -25,18 +25,14 @@
 
 .coach-header {
   position: relative;
-  left: 28%;
+  text-align: center;
   font-size: 1.8em;
   font-weight: bold;
-  color: whitesmoke !important;
+  color: #E8C547 !important;
+  box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+  0 13px 6px -7px rgba(43,43,43,0.1) !important;
 }
 
-.hr-break-3 {
-  width: 99%;
-  position: absolute;
-  border-color: black !important;
-  top: 1pc;
-}
 
 #coach-modal {
   position: fixed;
@@ -50,7 +46,7 @@
 
 .coach-body {
   position: relative;
-  background-color: red;
+  background-color: #F4F4F4;
   top: 10%;
   height: 80%;
   width: 130%;
@@ -59,14 +55,13 @@
 
 .coach-form {
   position: relative;
-  left: 2.5pc;
-  color: whitesmoke;
+  left: 2em;
+  color: #2D2A1B;
 }
 
 .coach-body input {
   width: fit-content !important;
   margin-bottom: 1 !important;
-  border-color: black !important;
   border-radius: 5px;
 }
 
@@ -81,7 +76,7 @@
   margin-bottom: .5pc;
   padding-right: 1.5pc;
   border-color: black !important;
-  color: whitesmoke !important;
+  color: #2D2A1B !important;
 }
 
 .coach-submit-btn {
@@ -92,11 +87,13 @@
   margin-top: -25px;
   font-size: .9em !important;
   line-height: 0 !important;
-  background-color: black !important;
-  border-color: transparent !important;
+  color: #2D2A1B !important;
+  background-color: #F4F4F4 !important;
+  border-color: #F4F4F4 !important;
     &:hover {
-      background-color: white !important;
-      color: black !important;
+      background-color: #E8C547 !important;
+      border-color: #E8C547 !important;
+      color: #2D2A1B !important;
   }
 }
 

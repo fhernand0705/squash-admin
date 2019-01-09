@@ -1,0 +1,35 @@
+<%= render partial: "pages/entry" %>
+<%= render "sessions/new" %>
+
+<!-- USER SIGNUP MODAL -->
+<div class="modal-container">
+  <div class="row signup-btn">
+    <button type="button" class="add-user-btn" onclick="userOpen()">Sign Up</button>
+  </div>
+  <div id="user-modal">
+     <div class="user-body">
+       <h2 class="user-header">Sign Up</h2>
+       <div class="user-form">
+         <%= form_for @user do |f| %>
+         <label class="user-label" for="first_name">First Name</label><br>
+         <%= f.text_field :first_name, class: "user-select-field" %><br>
+         <label class="user-label" for="last_name">Last Name</label><br>
+         <%= f.text_field :last_name, class: "user-select-field" %><br>
+         <label class="user-label" for="email">Email</label><br>
+         <%= f.email_field :email, class: "user-select-field" %><br>
+         <label class="user-label" for="password">Password</label><br>
+         <%= f.password_field :password, class: "user-select-field" %><br>
+       </div>
+
+       <div class="option-area">
+         <%= f.submit "Submit", class: "user-submit-btn" %><br>
+         <%= link_to 'Cancel', new_user_path, class: "cancel-link" %>
+       </div>
+         <% end %>
+    </div>
+  </div>
+</div>
+
+<script src="/assets/users.js"></script>
+<link rel="stylesheet" href="/assets/users.scss">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">

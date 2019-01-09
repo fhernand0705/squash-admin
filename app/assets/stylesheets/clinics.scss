@@ -18,7 +18,7 @@
   padding: 5px;
     &:hover {
        background-color: #7D9E58 !important;
-       color: white;
+       color: #F4F4F4;
        box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
        0 13px 6px -7px rgba(43,43,43,0.1) !important;
   }
@@ -26,18 +26,14 @@
 
 .clinic-header {
   position: relative;
-  left: 2.5em;
+  text-align: center;
   font-size: 1.5pc;
   font-weight: bold;
-  color: #F4ECDB !important;
+  color: #E8C547 !important;
+  box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+  0 13px 6px -7px rgba(43,43,43,0.1) !important;
 }
 
-.hr-break-4 {
-  width: 100%;
-  position: absolute;
-  border-color: #F4ECDB !important;
-  top: 1pc;
-}
 
 #clinic-modal {
   position: fixed;
@@ -51,7 +47,7 @@
 
 .clinic-body {
   position: relative;
-  background-color: #9E2504;
+  background-color: #F4F4F4;
   top: 7em;
   height: 42%;
   width: 125%;
@@ -64,7 +60,7 @@
   position: relative;
   left: 1.5pc;
   top: 1pc;
-  color: #F4ECDB;
+  color: #2D2A1B;
 }
 
 .clinic-label {
@@ -76,9 +72,8 @@
 .clinic-body input {
   width: fit-content !important;
   margin-bottom: 1 !important;
-  border-color: black !important;
   border-radius: 5px;
-  background-color: #E8D5AB;
+  background-color: #F4F4F4;
 }
 
 .clinic-submit-btn {
@@ -87,23 +82,24 @@
   height: 2pc;
   font-size: .8pc !important;
   line-height: 0 !important;
-  color: #9E2504 !important;
-  background-color: #E8D5AB !important;
-  border-color: transparent !important;
+  color: #2D2A1B !important;
+  background-color: #F4F4F4 !important;
+  border-color: #F4F4F4 !important;
     &:hover {
-      background-color: #9E2504 !important;
-      color: #E8D5AB !important;
+      background-color: #E8C547 !important;
+      border-color: #E8C547 !important;
+      color: #2D2A1B !important;
   }
 }
 
 .cancel-link-4 {
   position: relative;
-  left: 6pc;
-  top: .3pc;
-  font-size: bold;
-  color: black !important;
+  left: 6em;
+  top: .3em;
+  font-weight: bold !important;
+  color: #2D2A1B !important;
     &:hover {
-      color: #E8D5AB !important;
+      color: #F4F4F4 !important;
   }
 }
 

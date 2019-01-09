@@ -27,14 +27,9 @@
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
-  color: #2D2A1B !important;
-}
-
-.hr-break-2 {
-  width: 99.5%;
-  position: absolute;
-  border-color: #2D2A1B !important;
-  top: 1pc;
+  color: #E8C547 !important;
+  box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+  0 11px 6px -7px rgba(43,43,43,0.1) !important;
 }
 
 #cohort-modal {
@@ -47,7 +42,7 @@
   background-color: rgba(0,0,0,0.4);
 }
 
-#cohort-body {
+.cohort-body {
   position: relative;
   background-color: #F4F4F4;
   top: 4.5em;
@@ -56,7 +51,8 @@
   border-radius: 10px;
   box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
   0 18px 6px -7px rgba(43,43,43,0.1) !important;
-  opacity: 1;
+  // -webkit-transition: all .7s ease-in;
+  // opacity: 1;
 }
 
 .cohort-form {
@@ -65,15 +61,12 @@
   color: #2D2A1B;
 }
 
-#cohort-body input {
+.cohort-body input {
   width: fit-content !important;
   margin-bottom: 0 !important;
-  // border-color: #9E2504 !important;
   background-color: #F4F4F4;
   border-radius: 5px;
-    &:hover {
-      border-color: #2D2A1B !important;
-  }
+
 }
 
 .cohort-label {
@@ -93,16 +86,17 @@
 
 .cohort-submit-btn {
   position: relative;
-  left: 5em;
+  left: 4.5em;
   margin-top: -10px;
   height: 2pc;
-  font-size: .8pc !important;
+  font-size: .9em !important;
   line-height: 0 !important;
   color: #2D2A1B !important;
   border-color: #F4F4F4 !important;
   background-color: #F4F4F4 !important;
     &:hover {
       background-color: #E8C547 !important;
+      border-color: #E8C547 !important;
       color: #2D2A1B !important;
   }
 }
@@ -111,7 +105,7 @@
   position: relative;
   left: 6.5em;
   top: .5pc;
-  color: black !important;
+  color: #2D2A1B !important;
   font-weight: bold;
     &:hover {
       color: #F4F4F4 !important;
@@ -216,7 +210,7 @@
 
 .add-players-body {
   position: relative;
-  background-color: red;
+  background-color: #F4F4F4;
   top: 25%;
   height: 30%;
   width: 125%;
@@ -233,7 +227,7 @@
   margin-bottom: 2em;
   padding-right: 1.5pc;
   border-color: black !important;
-  color: whitesmoke !important;
+  color: #2D2A1B !important;
   height: 50%;
   right: 10px;
 }
