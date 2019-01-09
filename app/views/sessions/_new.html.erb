@@ -1,0 +1,28 @@
+<!-- USER LOGIN MODAL -->
+
+<div class="modal-container">
+  <div class="row login-btn">
+    <button type="button" class="add-login-btn" onclick="adminOpen()">Login</button>
+  </div>
+  <div id="admin-modal">
+     <div class="admin-body">
+       <h2 class="admin-header">Login</h2>
+       <div class="admin-form">
+         <%= form_for(:session, url: login_path) do |f| %>
+         <label class="admin-label" for="email">Email</label><br>
+         <%= f.text_field :email, class: "admin-select-field" %><br>
+         <label class="admin-label" for="password">Password</label><br>
+         <%= f.password_field :password, class: "admin-select-field" %><br>
+       </div>
+       <div class="option-area">
+         <%= f.submit "Login", class: "admin-submit-btn" %><br>
+         <%= link_to 'Cancel', new_user_path, class: "cancel-link" %>
+       </div>
+         <% end %>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/sessions.js"></script>
+<link rel="stylesheet" href="/assets/sessions.scss">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
