@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'sessions/new'
+  # get 'sessions/new'
   resources :players
   resources :coaches
   resources :clinics
@@ -8,13 +8,14 @@ Rails.application.routes.draw do
   resources :users
 
   root 'pages#dashboard'
+  get 'pages/entry', to: 'pages#home'
 
   # USER routes
   get 'users/new', to: 'users#create'
   patch 'users/:id', to: 'users#update'
 
   # SESSIONS routes
-  get '/login', to: 'sessions#new'
+  get '/login', to: 'pages#entry'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
 

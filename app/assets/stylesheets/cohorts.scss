@@ -28,13 +28,8 @@
   font-size: 1.5em;
   font-weight: bold;
   color: #2D2A1B !important;
-}
-
-.hr-break-2 {
-  width: 99.5%;
-  position: absolute;
-  border-color: #2D2A1B !important;
-  top: 1pc;
+  box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+  0 11px 6px -7px rgba(43,43,43,0.1) !important;
 }
 
 #cohort-modal {
@@ -47,7 +42,7 @@
   background-color: rgba(0,0,0,0.4);
 }
 
-#cohort-body {
+.cohort-body {
   position: relative;
   background-color: #DEDEDE;
   top: 4.5em;
@@ -56,8 +51,8 @@
   border-radius: 10px;
   box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
   0 18px 6px -7px rgba(43,43,43,0.1) !important;
-  -webkit-transition: all .7s ease-in;
-  opacity: 1;
+  // -webkit-transition: all .7s ease-in;
+  // opacity: 1;
 }
 
 .cohort-form {
@@ -66,7 +61,7 @@
   color: #2D2A1B;
 }
 
-#cohort-body input {
+.cohort-body input {
   width: fit-content !important;
   margin-bottom: 0 !important;
   // border-color: #9E2504 !important;

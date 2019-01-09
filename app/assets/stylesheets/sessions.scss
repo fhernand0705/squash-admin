@@ -1,3 +1,128 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// USER SIGNUP MODAL
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+}
+
+.add-login-btn {
+  position: relative;
+  left: 0;
+  background-color: #618934;
+  border-color: #618934;
+  font-size: 1em;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+  padding: 5px;
+    &:hover {
+       background-color: #7D9E58;
+       color: white;
+       box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+       0 15px 6px -7px rgba(43,43,43,0.1);
+  }
+}
+
+.admin-header {
+  position: relative;
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #E8C547;
+  text-align: center;
+  box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+  0 10px 6px -7px rgba(43,43,43,0.1);
+}
+
+#admin-modal {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  top: 0;
+  height: 100%;
+  min-width: 150%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.admin-body {
+  position: relative;
+  background-color: #F4F4F4;
+  top: 20%;
+  height: 35%;
+  width: 125%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+  0 11px 6px -7px rgba(43,43,43,0.1);
+  -webkit-transition: all .7s ease-in;
+  opacity: 1;
+}
+
+.admin-form {
+  position: relative;
+  left: 1.5em;
+  color: #2D2A1B;
+  margin-top: 1.5em;
+}
+
+.admin-label {
+  margin: 5px;
+  line-height: 1em;
+  display: inline-block;
+}
+
+.admin-body input {
+  border-radius: 5px;
+  width: fit-content;
+  margin-bottom: 0;
+  border-color: #2D2A1B;
+  height: 2.5em;
+}
+
+.admin-select-field {
+  width: fit-content;
+  margin-bottom: .5pc;
+  padding-right: 1.5pc;
+  border-color: #2D2A1B;
+  color: whitesmoke;
+}
+
+.admin-submit-btn {
+  position: relative;
+  left: 35%;
+  margin-top: -10px;
+  height: 2em;
+  font-size: .9em;
+  font-weight: bold;
+  line-height: 0;
+  background-color: #F4F4F4;
+  border-color: #F4F4F4 !important;
+    &:hover {
+      background-color: #E8C547;
+      border-color: #E8C547 !important;
+      color: #F4F4F4;
+  }
+}
+
+.cancel-link {
+  position: relative;
+  left: 4.7em;
+  top: .5em;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+    &:hover {
+      color: whitesmoke;
+      font-weight: bold;
+  }
+}
+
+.option-area {
+  position: relative;
+  top: 1em;
+}
