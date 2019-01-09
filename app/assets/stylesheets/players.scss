@@ -28,15 +28,10 @@
   position: relative;
   font-size: 1.5em;
   font-weight: bold;
-  color: whitesmoke !important;
+  color: #E8C547 !important;
   text-align: center;
-}
-
-.hr-break-1 {
-  width: 100%;
-  position: absolute;
-  border-color: black !important;
-  top: 1pc;
+  box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+  0 13px 6px -7px rgba(43,43,43,0.1) !important;
 }
 
 #player-modal {
@@ -51,7 +46,7 @@
 
 .player-body {
   position: relative;
-  background-color: red;
+  background-color: #F4F4F4;
   top: 10%;
   height: 73%;
   width: 125%;
@@ -65,7 +60,7 @@
 .player-form {
   position: relative;
   left: 2.5pc;
-  color: whitesmoke;
+  color: #2D2A1B;
 }
 
 .player-label {
@@ -78,36 +73,38 @@
   border-radius: 5px;
   width: fit-content !important;
   margin-bottom: 0 !important;
-  border-color: black !important;
 }
 
 .player-select-field {
   width: fit-content !important;
   margin-bottom: .5pc;
-  padding-right: 1.5pc;
+  padding-right: 1.5em;
   border-color: black !important;
-  color: whitesmoke !important;
+  color: #2D2A1B !important;
 }
 
 .player-submit-btn {
   position: relative;
-  left: 30%;
+  left: 28%;
   margin-top: -10px;
   height: 2em;
-  font-size: .8em !important;
+  font-size: .9em !important;
   line-height: 0 !important;
-  background-color: black !important;
-  border-color: transparent !important;
+  background-color: #F4F4F4 !important;
+  color: #2D2A1B !important;
+  border-color: #F4F4F4 !important;
     &:hover {
-      background-color: white !important;
-      color: black !important;
+      background-color: #E8C547 !important;
+      border-color: #E8C547 !important;
+      color: #2D2A1B !important;
   }
 }
 
-.cancel-link {
+.cancel-link-1 {
   position: relative;
-  left: 7pc;
-  color: black !important;
+  left: 6.9em;
+  top: .5em;
+  color: #2D2A1B !important;
   font-weight: bold;
     &:hover {
       color: whitesmoke !important;

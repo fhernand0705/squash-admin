@@ -8,14 +8,14 @@ Rails.application.routes.draw do
   resources :users
 
   root 'pages#dashboard'
-  get 'pages/entry', to: 'pages#home'
+  get 'pages/entry', to: 'pages#entry'
 
   # USER routes
   get 'users/new', to: 'users#create'
   patch 'users/:id', to: 'users#update'
 
   # SESSIONS routes
-  get '/login', to: 'pages#entry'
+  get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
 

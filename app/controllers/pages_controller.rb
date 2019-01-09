@@ -1,7 +1,6 @@
 class PagesController < ApplicationController
-  def home
+  def entry
     render :layout => false
-    @user = User.new
   end
 
 end

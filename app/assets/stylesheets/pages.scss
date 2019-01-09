@@ -14,8 +14,9 @@
   padding: 10% 17%;
 }
 
-// @media only screen (max-width: 25%) {
-//    .content {
-//
-//    }
-// }
+// ENTRY PAGE
+#bg {
+  background-image: url('/assets/bg-img2.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

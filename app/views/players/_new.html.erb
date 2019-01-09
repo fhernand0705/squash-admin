@@ -1,9 +1,9 @@
+<!-- NEW PLAYER MODAL -->
 <div class="modal-container">
   <div id="player-modal">
 
      <div class="player-body">
        <h2 class="player-header">New Player</h2>
-       <hr class="hr-break-1">
        <div class="player-form">
          <%= form_for @player do |f| %>
          <label class="player-label" for="first_name">First Name</label><br>
@@ -29,7 +29,7 @@
 
        <div>
          <%= f.submit "Create", class: "player-submit-btn" %><br>
-         <%= link_to 'Cancel', players_path, class: "cancel-link" %>
+         <%= link_to 'Cancel', players_path, class: "cancel-link-1" %>
        </div>
          <% end %>
     </div>
