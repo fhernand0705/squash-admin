@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :cohorts
   resources :users
 
-  root 'pages#home'
+  root 'pages#dashboard'
 
   # USER routes
   get 'users/new', to: 'users#create'

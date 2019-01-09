@@ -49,13 +49,14 @@
 
 #cohort-body {
   position: relative;
-  background-color: #F4F4F4;
+  background-color: #DEDEDE;
   top: 4.5em;
   height: 73%;
   min-width: 130%;
   border-radius: 10px;
   box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
   0 18px 6px -7px rgba(43,43,43,0.1) !important;
+  -webkit-transition: all .7s ease-in;
   opacity: 1;
 }
 

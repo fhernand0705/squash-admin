@@ -16,8 +16,8 @@
 
       <div class="row-card">
         <div class="column">
-          <button type="button" class="add-player-btn" onclick="playerOpen()">Edit</button>
-          <%= link_to "Delete", @player, method: :delete,
+          <button type="button" class="add-user-btn" onclick="userOpen()">Edit</button>
+          <%= link_to "Delete", @user, method: :delete,
                                          remote: true,
                                          data: {confirm: 'are you sure?'} %>
         </div>
