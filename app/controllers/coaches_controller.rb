@@ -11,9 +11,9 @@ class CoachesController < ApplicationController
     @coach = Coach.new(coach_params)
     if @coach.valid?
        @coach.save
-       redirect_to @coach
+       redirect_to coaches_path
     else
-       redirect_to root_path
+       redirect_to new_coaches_path
     end
   end
 
@@ -32,11 +32,12 @@ class CoachesController < ApplicationController
     @coach = Coach.new
   end
 
-  def delete # DELETE object
+  def destroy # DELETE object
     @coach = Coach.find(params[:id])
     respond_to do |format|
       format.js
     end
+    # @coach.destroy
   end
 
   private

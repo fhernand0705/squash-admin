@@ -17,7 +17,7 @@
       <th>Remove</th>
     </tr>
     <% @clinic_all.each do |c| %>
-    <tr class="clinic-trows">
+    <tr class="clinic-trows" id="clinic-<%= c.id %>">
       <td><%= link_to c.id, c %></td>
       <td><%= c.name %></td>
       <td><%= c.hours %></td>
@@ -27,7 +27,7 @@
         <% end %>
       </td>
       <td>
-        <%= link_to clinics_path, method: :delete, remote: true, data: {confirm: 'are you sure?'} do %>
+        <%= link_to clinic_path(c.id), method: :delete, data: {confirm: 'Are you sure you want to delete?', remote: true} do %>
           <i class="fas fa-user-times"></i>
         <% end %>
       </td>

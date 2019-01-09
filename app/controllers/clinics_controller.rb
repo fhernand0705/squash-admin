@@ -7,9 +7,9 @@ class ClinicsController < ApplicationController
     @clinic = Clinic.new(clinic_params)
     if @clinic.valid?
        @clinic.save
-       redirect_to @clinic
+       redirect_to clinics_path
     else
-      redirect_to root_path
+      redirect_to new_clinics_path
     end
   end
 
@@ -37,6 +37,7 @@ class ClinicsController < ApplicationController
     respond_to do |format|
       format.js
     end
+    # @clinic.destroy
   end
 
   def clinic_params

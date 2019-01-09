@@ -9,9 +9,33 @@
   min-height: 100vh;
 }
 
+.bottom {
+  position: relative;
+  top: 1.5em
+}
+
 .content {
-  max-height: 100%;
-  padding: 10% 17%;
+  display: grid;
+  justify-content: center;
+  min-height: 100%;
+
+}
+
+.cohorts, .coaches, .clinics, .players {
+  background-color: #2D2A1B;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.coaches, .players {
+  position: relative;
+  left: 1.5em;
+}
+
+.clinics, .cohorts {
+  position: relative;
+  right: 1.5em;
 }
 
 // ENTRY PAGE

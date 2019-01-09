@@ -1,36 +1,24 @@
 <!-- USER (EDIT) MODAL -->
 
 <div class="modal-container">
-  <div id="player-modal">
+  <div id="user-modal">
 
-     <div class="player-body">
-       <h2 class="player-header">Edit Player</h2>
-       <hr class="hr-break-1">
-       <div class="player-form">
-         <%= form_for @player do |f| %>
-         <label class="player-label" for="first_name">First Name</label><br>
-         <%= f.text_field :first_name %><br>
-         <label class="player-label" for="last_name">Last Name</label><br>
-         <%= f.text_field :last_name %><br>
-         <label class="player-label" for="age">Age</label><br>
-         <%= f.number_field :age %><br></br>
-         <%= f.select(:gender, ['--Gender--', 'Male', 'Female'], {}, {:class => "player-select-field"}) %><br>
-         <%= f.collection_select  :cohort_ids,
-                                   Cohort.all,
-                                  :id,
-                                  :name,
-                                  {:prompt => '--Add Cohort--'},
-                                  {:class => "player-select-field"} %><br>
-         <%= f.select(:education, ['--Highest Education--',
-                                   'High School',
-                                   'College',
-                                   'Masters',
-                                   'PHD'], {},
-                                  {:class => "player-select-field"}) %><br></br>
+     <div class="user-body">
+       <h2 class="user-header">Edit User</h2>
+       <div class="user-form">
+         <%= form_for @user do |f| %>
+         <label class="user-label" for="first_name">First Name</label><br>
+         <%= f.text_field :first_name, class: "user-select-field" %><br>
+         <label class="user-label" for="last_name">Last Name</label><br>
+         <%= f.text_field :last_name, class: "user-select-field" %><br>
+         <label class="user-label" for="email">Email</label><br>
+         <%= f.email_field :email, class: "user-select-field" %><br>
+         <label class="user-label" for="password">Change Password</label><br>
+         <%= f.password_field :password, class: "user-select-field" %><br>
        </div>
 
-       <div>
-         <%= f.submit "Update", class: "player-submit-btn" %><br>
+       <div class="option-area">
+         <%= f.submit "Submit", class: "user-submit-btn" %><br>
          <%= link_to 'Cancel', @user, class: "cancel-link" %>
        </div>
          <% end %>

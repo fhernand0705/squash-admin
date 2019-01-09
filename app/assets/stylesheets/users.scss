@@ -18,7 +18,7 @@ body {
   top: 14em
 }
 
-.add-user-btn {
+.user-signup-btn {
   background-color: #2D2A1B;
   border-color: #2D2A1B;
   font-size: 1.2em;
@@ -88,6 +88,7 @@ body {
   width: fit-content;
   margin-bottom: 0;
   border-color: #2D2A1B;
+  color: #2D2A1B;
   height: 2.5em;
 }
 
@@ -106,6 +107,7 @@ body {
   height: 2em;
   font-size: .8em;
   font-weight: bold;
+  cursor: pointer;
   line-height: 0;
   background-color: #F4F4F4;
   border-color: #F4F4F4 !important;
@@ -132,4 +134,43 @@ body {
 .option-area {
   position: relative;
   top: 1.5em;
+}
+
+// USER EDIT MODAL
+.edit-user-btn {
+    background-color: #2D2A1B;
+    border-color: #2D2A1B;
+    font-size: 1em;
+    color: #E8C547;
+    padding: .2em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+      &:hover {
+         background-color: #E8C547;
+         border-color: #E8C547;
+         color: #2D2A1B;
+         box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+         0 15px 6px -7px rgba(43,43,43,0.1);
+
+  }
+}
+
+.delete-user-btn {
+  background-color: #2D2A1B;
+  border-color: #2D2A1B;
+  font-size: 1em;
+  color: #E8C547;
+  padding: .2em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+    &:hover {
+       background-color: #E8C547;
+       border-color: #E8C547;
+       color: #2D2A1B;
+       box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+       0 15px 6px -7px rgba(43,43,43,0.1);
+
+  }
 }

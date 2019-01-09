@@ -19,7 +19,7 @@
       <th>Remove</th>
     </tr>
     <% @cohort_all.each do |c| %>
-    <tr class="cohorts-trows">
+    <tr class="cohorts-trows" id="cohort-<%= c.id %>">
       <td><%= c.id %></td>
       <td><%= c.name %></td>
       <td><%= c.start_date %></td>
@@ -32,7 +32,7 @@
         <% end %>
       </td>
       <td>
-        <%= link_to cohorts_path, method: :delete, remote: true, data: {confirm: 'are you sure?'} do %>
+        <%= link_to cohort_path(c.id), method: :delete, data: {confirm: 'Are you sure you want to delete?', remote: true,} do %>
           <i class="fas fa-user-times"></i>
         <% end %>
       </td>

@@ -8,9 +8,9 @@ class CohortsController < ApplicationController
     @cohort = Cohort.new(cohort_params)
     if @cohort.valid?
        @cohort.save
-       redirect_to @cohort
+       redirect_to cohorts_path
     else
-       render 'cohorts/new'
+       render new_cohorts_path
      end
    end
 

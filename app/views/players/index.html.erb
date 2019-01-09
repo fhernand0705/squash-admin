@@ -18,7 +18,7 @@
       <th>Remove</th>
     </tr>
     <% @player_all.each do |p| %>
-    <tr class="player-trows">
+    <tr class="player-rows" id="player-<%=p.id%>">
       <td><%= p.id %></td>
       <td><%= p.first_name %></td>
       <td><%= p.last_name %></td>
@@ -30,7 +30,7 @@
         <% end %>
       </td>
       <td>
-        <%= link_to players_path, method: :delete, remote: true, data: {confirm: 'are you sure?'} do %>
+        <%= link_to player_path(p.id), method: :delete, data: {confirm: 'Are you sure you want to delete?', remote: true} do %>
           <i class="fas fa-user-times"></i>
         <% end %>
       </td>

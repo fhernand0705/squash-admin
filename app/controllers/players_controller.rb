@@ -9,7 +9,7 @@ class PlayersController < ApplicationController
     @player = Player.new(player_params)
     if @player.valid?
        @player.save
-       redirect_to @player
+       redirect_to players_path
     else
       render 'pages/home'
     end
@@ -35,10 +35,11 @@ class PlayersController < ApplicationController
   end
 
   def destroy #DELETE objects
-    @player = Clinic.find(params[:id])
+    @player = Player.find(params[:id])
     respond_to do |format|
       format.js
     end
+    # @player.destroy
   end
 
   private #makes the cohort_params private
