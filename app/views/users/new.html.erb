@@ -1,8 +1,11 @@
+<%= render partial: "pages/entry" %>
+<%= render "sessions/new" %>
 
 <!-- USER SIGNUP MODAL -->
 <div class="modal-container">
-  <button type="button" class="add-user-btn" onclick="userOpen()">Sign Up</button>
-
+  <div class="row signup-btn">
+    <button type="button" class="add-user-btn" onclick="userOpen()">Sign Up</button>
+  </div>
   <div id="user-modal">
      <div class="user-body">
        <h2 class="user-header">Sign Up</h2>
