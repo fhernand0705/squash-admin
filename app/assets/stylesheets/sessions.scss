@@ -102,7 +102,6 @@ body {
 .admin-submit-btn {
   position: relative;
   left: 35%;
-  margin-top: -10px;
   height: 2em;
   font-size: .9em;
   font-weight: bold;
@@ -124,12 +123,12 @@ body {
   text-decoration: none;
   font-weight: bold;
     &:hover {
-      color: whitesmoke;
+      color: #E8C547;
       font-weight: bold;
   }
 }
 
 .option-area {
   position: relative;
-  top: 1em;
+  top: 1.5em;
 }

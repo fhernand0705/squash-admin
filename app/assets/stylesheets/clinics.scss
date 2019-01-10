@@ -99,7 +99,7 @@
   font-weight: bold !important;
   color: #2D2A1B !important;
     &:hover {
-      color: #F4F4F4 !important;
+      color: #E8C547 !important;
   }
 }
 
@@ -132,10 +132,14 @@
 }
 
 // PROFILE
+.clinic-wrapper {
+  display: grid;
+  justify-content: center;
+}
 .clinic-card {
   position: relative;
-  float: right;
-  width: 25%;
+  width: 15em;
+  top: 2em;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
@@ -145,4 +149,41 @@
 .clinic-card-name {
   display: grid;
   justify-content: center;
+}
+
+.clinic-delete-btn {
+  background-color: #2D2A1B !important;
+  border-color: #2D2A1B!important;
+  font-size: 1em !important;
+  color: #E8C547 !important;
+  padding: .5em 2em !important;
+  font-weight: bold;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif!important;
+    &:hover {
+       background-color: #E8C547!important;
+       border-color: #E8C547!important;
+       color: #2D2A1B!important;
+       box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+       0 15px 6px -7px rgba(43,43,43,0.1);
+ }
+}
+
+.clinic-edit-btn {
+  position: relative;
+  background-color: #2D2A1B !important;
+  border-color: #2D2A1B!important;
+  font-size: 1em !important;
+  color: #E8C547 !important;
+  top: .1em;
+  padding: 0 2em !important;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif!important;
+    &:hover {
+       background-color: #E8C547!important;
+       border-color: #E8C547!important;
+       color: #2D2A1B!important;
+       box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+       0 15px 6px -7px rgba(43,43,43,0.1);
+ }
 }

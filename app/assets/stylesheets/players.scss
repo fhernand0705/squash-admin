@@ -102,12 +102,12 @@
 
 .cancel-link-1 {
   position: relative;
-  left: 6.9em;
+  left: 7.5em;
   top: .5em;
   color: #2D2A1B !important;
   font-weight: bold;
     &:hover {
-      color: whitesmoke !important;
+      color: #E8C547 !important;
       font-weight: bold;
   }
 }
@@ -142,8 +142,7 @@
 // PLAYER PROFILE
 .player-card {
   position: relative;
-  float: right;
-  width: 25%;
+  top: 2em;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),

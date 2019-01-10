@@ -1,8 +1,8 @@
 <%= render 'edit' %>
 
 <div class="profile-wrapper">
-  <!-- PLAYER PROFILE CARD -->
-  <div class="wrapper-card">
+  <!-- COACHES PROFILE CARD -->
+  <div class="coach-wrapper">
     <div class="coach-card">
       <div class="row-card">
         <div class="column coach-card-name"><h3><%= @coach.coach_full_name %></h3></div>
@@ -30,8 +30,9 @@
       </div>
       <div class="row-card">
         <div class="column">
-          <button type="button" class="add-coach-btn" onclick="coachOpen()">Edit</button>
-          <%= link_to "Delete", @coach, method: :delete,
+          <button type="button" class="coach-edit-btn" onclick="coachOpen()">Edit</button>
+          <%= link_to "DELETE", @coach, method: :delete,
+                                        class: "coach-delete-btn",
                                         remote: true,
                                         data: {confirm: 'are you sure?'} %>
         </div>

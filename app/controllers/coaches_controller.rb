@@ -11,7 +11,7 @@ class CoachesController < ApplicationController
     @coach = Coach.new(coach_params)
     if @coach.valid?
        @coach.save
-       redirect_to coaches_path
+       redirect_to @coach
     else
        redirect_to new_coaches_path
     end
@@ -37,7 +37,7 @@ class CoachesController < ApplicationController
     respond_to do |format|
       format.js
     end
-    # @coach.destroy
+    @coach.destroy
   end
 
   private

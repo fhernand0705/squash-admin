@@ -7,7 +7,7 @@ class ClinicsController < ApplicationController
     @clinic = Clinic.new(clinic_params)
     if @clinic.valid?
        @clinic.save
-       redirect_to clinics_path
+       redirect_to @clinic
     else
       redirect_to new_clinics_path
     end

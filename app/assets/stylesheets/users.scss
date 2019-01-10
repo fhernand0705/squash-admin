@@ -89,7 +89,7 @@ body {
   margin-bottom: 0;
   border-color: #2D2A1B;
   color: #2D2A1B;
-  height: 2.5em;
+  height: 2em;
 }
 
 .user-select-field {
@@ -103,9 +103,8 @@ body {
 .user-submit-btn {
   position: relative;
   left: 35%;
-  margin-top: -10px;
   height: 2em;
-  font-size: .8em;
+  font-size: .9em;
   font-weight: bold;
   cursor: pointer;
   line-height: 0;
@@ -120,55 +119,94 @@ body {
 
 .cancel-link {
   position: relative;
-  left: 4.8em;
+  left: 5.8em;
   top: .5em;
-  color: black;
+  color: #2D2A1B;
   text-decoration: none;
   font-weight: bold;
     &:hover {
-      color: whitesmoke;
+      color: #E8C547 !important;
       font-weight: bold;
   }
 }
 
-.option-area {
+.submit-cancel {
   position: relative;
-  top: 1.5em;
+  top: 2.5em;
+}
+
+// PROFILE
+.user-wrapper {
+  display: grid;
+  justify-content: center;
+}
+
+.user-card {
+  position: relative;
+  top: .5em;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+  0 11px 6px -7px rgba(43,43,43,0.1);
+}
+
+.user-card-name {
+  text-align: center;
 }
 
 // USER EDIT MODAL
-.edit-user-btn {
-    background-color: #2D2A1B;
-    border-color: #2D2A1B;
-    font-size: 1em;
-    color: #E8C547;
-    padding: .2em;
-    cursor: pointer;
+.user-edit-btn {
+    background-color: #2D2A1B !important;
+    border-color: #2D2A1B!important;
+    font-size: 1em !important;
+    color: #E8C547 !important;
+    padding: .2em !important;
     border-radius: 5px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif!important;
       &:hover {
-         background-color: #E8C547;
-         border-color: #E8C547;
-         color: #2D2A1B;
+         background-color: #E8C547!important;
+         border-color: #E8C547!important;
+         color: #2D2A1B!important;
          box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
          0 15px 6px -7px rgba(43,43,43,0.1);
-
   }
 }
 
+.user-update-btn {
+  position: relative;
+  left: 24%;
+  background-color: #F4F4F4 !important;
+  border-color: #F4F4F4 !important;
+  font-size: 1em !important;
+  color: #2D2A1B !important;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif !important;
+    &:hover {
+       background-color: #E8C547 !important;
+       border-color: #E8C547 !important;
+       color: #2D2A1B !important;
+       box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+       0 15px 6px -7px rgba(43,43,43,0.1);
+ }
+}
+
+.update-cancel {
+  position: relative;
+  top: 1em;
+}
+
 .delete-user-btn {
-  background-color: #2D2A1B;
-  border-color: #2D2A1B;
-  font-size: 1em;
-  color: #E8C547;
-  padding: .2em;
-  cursor: pointer;
+  background-color: #2D2A1B !important;
+  border-color: #2D2A1B !important;
+  font-size: 1em !important;
+  color: #E8C547 !important;
+  padding: .2em !important;
   border-radius: 5px;
   font-family: 'Oswald', sans-serif;
     &:hover {
-       background-color: #E8C547;
-       border-color: #E8C547;
-       color: #2D2A1B;
+       background-color: #E8C547 !important;
+       border-color: #E8C547 !important;
+       color: #2D2A1B !important;
        box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
        0 15px 6px -7px rgba(43,43,43,0.1);
 
