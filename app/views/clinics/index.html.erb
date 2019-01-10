@@ -8,6 +8,7 @@
       <button type="button" class="add-clinic-btn" onclick="clinicOpen()">Add Clinic</button>
     </div>
   </div>
+   <% if @clinic_all.present? %>
   <table class="clinics-table">
     <tr>
       <th>Id</th>
@@ -33,6 +34,9 @@
       </td>
     </tr>
     <% end %>
+    <% else %>
+     <h1>NO CLINICS FOUND...</h1>
+    <% end %> 
   </table>
 
 </div>

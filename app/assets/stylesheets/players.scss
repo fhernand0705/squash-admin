@@ -53,8 +53,8 @@
   border-radius: 10px;
   box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
   0 11px 6px -7px rgba(43,43,43,0.1);
-  -webkit-transition: all .7s ease-in;
-  opacity: 0;
+  // -webkit-transition: all .7s ease-in;
+  // opacity: 0;
 }
 
 .player-form {
@@ -140,6 +140,10 @@
 }
 
 // PLAYER PROFILE
+.player-wrapper {
+  display: grid;
+  justify-content: center;
+}
 .player-card {
   position: relative;
   top: 2em;
@@ -152,4 +156,41 @@
 .player-card-name {
   display: grid;
   justify-content: center;
+}
+
+.player-edit-btn {
+  position: relative;
+  background-color: #2D2A1B !important;
+  border-color: #2D2A1B!important;
+  font-size: 1em !important;
+  color: #E8C547 !important;
+  top: .1em;
+  padding: 0 2em !important;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif!important;
+    &:hover {
+       background-color: #E8C547!important;
+       border-color: #E8C547!important;
+       color: #2D2A1B!important;
+       box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+       0 15px 6px -7px rgba(43,43,43,0.1);
+ }
+}
+
+.player-delete-btn {
+  background-color: #2D2A1B !important;
+  border-color: #2D2A1B !important;
+  font-size: 1em !important;
+  color: #E8C547 !important;
+  padding: .5em 2em !important;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+    &:hover {
+       background-color: #E8C547 !important;
+       border-color: #E8C547 !important;
+       color: #2D2A1B !important;
+       box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+       0 15px 6px -7px rgba(43,43,43,0.1);
+
+  }
 }

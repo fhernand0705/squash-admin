@@ -7,6 +7,7 @@
       <button type="button" class="add-cohort-btn" onclick="cohortOpen()">Add Cohort</button>
     </div>
   </div>
+   <% if @cohort_all.present? %>
   <table class="cohorts-table">
     <tr>
       <th>ID</th>
@@ -38,24 +39,12 @@
       </td>
     </tr>
     <% end %>
+    <% else %>
+     <h1>NO COHORTS FOUND...</h1>
+    <% end %>
   </table>
 
 </div>
 
-<script>
-  var cohort_modal = document.getElementById('cohort-modal');
-  var side_bar = document.getElementById('side-bar');
-  var cohort_body = document.getElementById('cohort-body');
 
-  function cohortOpen() {
-   // if (cohort_body.style.opacity == 0) {
-   //   cohort_body.style.opacity = "1";
-   // } else {
-   //   (cohort_body.style.opacity = "0");
-   // }
-   cohort_modal.style.display = "grid";
-   cohort_modal.style.justifyContent = "center";
-   side_bar.style.zIndex = "0";
-  };
-
-</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

@@ -11,7 +11,7 @@ class PlayersController < ApplicationController
        @player.save
        redirect_to players_path
     else
-      render 'pages/home'
+      render 'pages/dashboard'
     end
   end
 
@@ -39,7 +39,7 @@ class PlayersController < ApplicationController
     respond_to do |format|
       format.js
     end
-    @player.destroy
+    # @player.destroy
   end
 
   private #makes the cohort_params private

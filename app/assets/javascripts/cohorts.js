@@ -11,7 +11,6 @@ function cohortOpen() {
  side_bar.style.zIndex = "0";
 };
 
-
 window.onclick = function(event) {
   if (event.target == cohort_modal) {
     cohort_modal.style.display = "none";

@@ -11,7 +11,7 @@ function playerOpen() {
   side_bar.style.zIndex = '0';
 };
 
-$('.add-player-btn').on('click', function() {
-  if ($('.player-body').css('opacity') == 0) $('.player-body').css('opacity', 1);
-  else $('.player-body').css('opacity', 0);
-});
+// $('.add-player-btn').on('click', function() {
+//   if ($('.player-body').css('opacity') == 0) $('.player-body').css('opacity', 1);
+//   else $('.player-body').css('opacity', 0);
+// })

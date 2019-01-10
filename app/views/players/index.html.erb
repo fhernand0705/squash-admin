@@ -7,6 +7,7 @@
       <button type="button" class="add-player-btn" onclick="playerOpen()">Add Player</button>
     </div>
   </div>
+    <% if @player_all.present? %>
   <table class="players-table">
     <tr>
       <th>ID</th>
@@ -35,6 +36,9 @@
         <% end %>
       </td>
     </tr>
+    <% end %>
+    <% else %>
+     <h1>NO PLAYERS FOUND...</h1>
     <% end %>
   </table>
 </div>
