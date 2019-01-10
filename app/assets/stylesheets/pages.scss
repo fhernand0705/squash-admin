@@ -9,11 +9,6 @@
   min-height: 100vh;
 }
 
-.bottom {
-  position: relative;
-  top: 1.5em
-}
-
 .content {
   display: grid;
   justify-content: center;
@@ -21,11 +16,26 @@
 
 }
 
-.cohorts, .coaches, .clinics, .players {
-  background-color: #2D2A1B;
+.pri-bottom {
+  position: relative;
+  top: 2em;
+}
+
+.sec-bottom {
+  position: relative;
+  top: 1.5em
+}
+
+
+.cohorts, .coaches, .clinics, .players, img {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 225px;
+  width: 225px;
+   &:hover {
+     transform: scale(1.06, 1.06);
+     transition-duration: .8s;
+
+  }
 }
 
 .coaches, .players {
