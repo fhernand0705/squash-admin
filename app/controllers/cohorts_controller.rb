@@ -27,9 +27,6 @@ class CohortsController < ApplicationController
     @cohort = Cohort.find(params[:id])
     @cohort.update(cohort_params)
     redirect_to @cohort
-    respond_to do |format|
-      format.js
-    end
   end
 
   def index # DISPLAYS all cohorts

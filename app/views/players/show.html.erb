@@ -26,7 +26,7 @@
       </div>
        <% end %>
        <% else %>
-       <h6>NO COHORT ASSOCIATED WITH <%= @player.first_name %></h6>
+       <h6>NO COHORT ASSOCIATED WITH: <%= @player.first_name %></h6>
        <% end %>
       <div class="row-card">
         <div class="column">
@@ -37,6 +37,7 @@
                                          data: {confirm: 'are you sure?'} %>
         </div>
       </div>
+      <%= link_to "Back", players_path %>
     </div>
   </div>
 </div>

@@ -130,6 +130,19 @@ body {
   }
 }
 
+.edit-cancel-link {
+  position: relative;
+  left: 5.5em;
+  top: .5em;
+  color: #2D2A1B;
+  text-decoration: none;
+  font-weight: bold;
+    &:hover {
+      color: #E8C547 !important;
+      font-weight: bold;
+  }
+}
+
 .submit-cancel {
   position: relative;
   top: 2.5em;
@@ -151,7 +164,7 @@ body {
 
 .user-card {
   position: relative;
-  top: .5em;
+  top: 5.5em;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),

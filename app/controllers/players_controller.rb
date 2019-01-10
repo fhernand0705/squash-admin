@@ -9,6 +9,7 @@ class PlayersController < ApplicationController
     @player = Player.new(player_params)
     if @player.valid?
        @player.save
+       flash[:success] = "Player created!"
        redirect_to players_path
     else
       render 'pages/dashboard'

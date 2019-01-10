@@ -14,8 +14,10 @@
 
   <body id="main-body">
 
-
     <%= yield %>
     <%= render 'layouts/navbars' %>
+    <% if flash[:success] %>
+    <div class="alert-success"><%= flash[:success] %></div>
+    <% end %>
   </body>
 </html>
