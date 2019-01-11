@@ -1,10 +1,7 @@
 class SessionsController < ApplicationController
   def new
-    if session[:id] = nil
-      render :layout => true
-    else
     render :layout => false
-   end
+
   end
 
   def create
