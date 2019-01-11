@@ -1,7 +1,6 @@
 class SessionsController < ApplicationController
   def new
     render :layout => false
-
   end
 
   def create
