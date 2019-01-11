@@ -8,7 +8,7 @@
      <div class="user-body">
        <h2 class="user-header">Sign Up</h2>
        <div class="user-form">
-         <%= form_for @user do |f| %>
+         <%= form_for(@user) do |f| %>
          <label class="user-label" for="first_name">First Name</label><br>
          <%= f.text_field :first_name, class: "user-select-field" %><br>
          <label class="user-label" for="last_name">Last Name</label><br>
