@@ -1,5 +1,6 @@
 <%= render 'new' %>
 
+<!-- COHORTS TABLE -->
 <div class="wrapper">
   <div class="row">
     <div class="column cohorts-table-head">Cohorts</div>
@@ -33,7 +34,7 @@
         <% end %>
       </td>
       <td>
-        <%= link_to cohort_path(c.id), method: :delete, data: {confirm: 'Are you sure you want to delete?', remote: true,} do %>
+        <%= link_to cohort_path(c.id), method: :delete, data: {confirm: 'Are you sure you want to delete?', remote: true} do %>
           <i class="fas fa-user-times"></i>
         <% end %>
       </td>
