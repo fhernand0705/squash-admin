@@ -37,7 +37,7 @@ class ClinicsController < ApplicationController
     respond_to do |format|
       format.js
     end
-    # @clinic.destroy
+    @clinic.destroy
   end
 
   def clinic_params

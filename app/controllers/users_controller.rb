@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     if @user.valid?
        @user.save
        log_in @user
-       flash[:success] = "Welcome Administrator!"
+       # flash[:success] = "Welcome Administrator!"
        redirect_to @user
     else
       render 'users/new'

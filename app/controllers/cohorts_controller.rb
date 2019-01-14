@@ -38,7 +38,7 @@ class CohortsController < ApplicationController
     respond_to do |format|
       format.js
     end
-    # @cohort.destroy
+    @cohort.destroy
   end
 
   private #secures the below data
