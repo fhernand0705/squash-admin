@@ -1,0 +1,1572 @@
+/* line 6, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 11, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.add-clinic-btn {
+  position: relative;
+  background-color: #618934 !important;
+  font-family: 'Oswald', sans-serif;
+  border-color: #618934;
+  font-size: 1em;
+  padding: 5px;
+}
+/* line 18, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.add-clinic-btn:hover {
+  background-color: #7D9E58 !important;
+  color: #F4F4F4;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 13px 6px -7px rgba(43, 43, 43, 0.1) !important;
+}
+
+/* line 26, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinic-header {
+  position: relative;
+  text-align: center;
+  font-size: 1.5pc;
+  font-weight: bold;
+  color: #E8C547 !important;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 13px 6px -7px rgba(43, 43, 43, 0.1) !important;
+}
+
+/* line 37, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+#clinic-modal {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 47, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinic-body {
+  position: relative;
+  background-color: #F4F4F4;
+  top: 7em;
+  height: 42%;
+  width: 125%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 18px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 58, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinic-form {
+  position: relative;
+  left: 1.5pc;
+  top: 1pc;
+  color: #2D2A1B;
+}
+
+/* line 65, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinic-label {
+  margin: 0;
+  line-height: 0;
+  display: inline-block;
+}
+
+/* line 71, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinic-body input {
+  width: fit-content !important;
+  margin-bottom: 1 !important;
+  border-radius: 5px;
+  background-color: #F4F4F4;
+}
+
+/* line 78, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinic-submit-btn {
+  position: relative;
+  left: 3.8pc;
+  height: 2pc;
+  font-size: .8pc !important;
+  line-height: 0 !important;
+  color: #2D2A1B !important;
+  background-color: #F4F4F4 !important;
+  border-color: #F4F4F4 !important;
+}
+/* line 87, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinic-submit-btn:hover {
+  background-color: #E8C547 !important;
+  border-color: #E8C547 !important;
+  color: #2D2A1B !important;
+}
+
+/* line 94, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.cancel-link-4 {
+  position: relative;
+  left: 6em;
+  top: .3em;
+  font-weight: bold !important;
+  color: #2D2A1B !important;
+}
+/* line 100, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.cancel-link-4:hover {
+  color: #E8C547 !important;
+}
+
+/* line 106, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.wrapper {
+  padding: 10% 15%;
+}
+
+/* line 110, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinic-table-head {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* line 115, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinics-table {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 13px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 123, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinics-table tr:nth-child(even) {
+  background-color: #E8C547;
+}
+
+/* line 127, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinic-trows, a, td, th {
+  color: black !important;
+  border-color: black !important;
+}
+
+/* line 134, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinic-wrapper {
+  display: grid;
+  justify-content: center;
+}
+
+/* line 138, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinic-card {
+  position: relative;
+  width: 15em;
+  top: 2em;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 148, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinic-card-name {
+  display: grid;
+  justify-content: center;
+}
+
+/* line 153, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinic-delete-btn {
+  background-color: #2D2A1B !important;
+  border-color: #2D2A1B !important;
+  font-size: 1em !important;
+  color: #E8C547 !important;
+  padding: .5em 2em !important;
+  font-weight: bold;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif !important;
+}
+/* line 162, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinic-delete-btn:hover {
+  background-color: #E8C547 !important;
+  border-color: #E8C547 !important;
+  color: #2D2A1B !important;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 15px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 171, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinic-edit-btn {
+  position: relative;
+  background-color: #2D2A1B !important;
+  border-color: #2D2A1B !important;
+  font-size: 1em !important;
+  color: #E8C547 !important;
+  top: .1em;
+  padding: 0 2em !important;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif !important;
+}
+/* line 181, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/clinics.scss */
+.clinic-edit-btn:hover {
+  background-color: #E8C547 !important;
+  border-color: #E8C547 !important;
+  color: #2D2A1B !important;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 15px 6px -7px rgba(43, 43, 43, 0.1);
+}
+/* line 6, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.modal-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 11, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.add-coach-btn {
+  position: relative;
+  background-color: #618934 !important;
+  font-family: 'Oswald', sans-serif;
+  border-color: #618934;
+  font-size: 1em;
+  padding: 5px;
+}
+/* line 18, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.add-coach-btn:hover {
+  background-color: #7D9E58 !important;
+  color: #F4F4F4;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1) !important;
+}
+
+/* line 26, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coach-header {
+  position: relative;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #E8C547 !important;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 13px 6px -7px rgba(43, 43, 43, 0.1) !important;
+}
+
+/* line 37, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+#coach-modal {
+  position: fixed;
+  display: none;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 47, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coach-body {
+  position: relative;
+  background-color: #F4F4F4;
+  top: 10%;
+  height: 80%;
+  width: 130%;
+  border-radius: 10px;
+}
+
+/* line 56, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coach-form {
+  position: relative;
+  left: 2em;
+  color: #2D2A1B;
+}
+
+/* line 62, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coach-body input {
+  width: fit-content !important;
+  margin-bottom: 1 !important;
+  border-radius: 5px;
+}
+
+/* line 68, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coach-label {
+  margin: 0;
+  line-height: 0;
+  display: inline-block;
+}
+
+/* line 74, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coach-select-field {
+  width: fit-content !important;
+  margin-bottom: .5pc;
+  padding-right: 1.5pc;
+  border-color: black !important;
+  color: #2D2A1B !important;
+}
+
+/* line 82, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coach-submit-btn {
+  position: relative;
+  left: 30%;
+  height: 2em;
+  font-family: 'Oswald', sans-serif !important;
+  margin-top: -25px;
+  font-size: .9em !important;
+  line-height: 0 !important;
+  color: #2D2A1B !important;
+  background-color: #F4F4F4 !important;
+  border-color: #F4F4F4 !important;
+}
+/* line 93, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coach-submit-btn:hover {
+  background-color: #E8C547 !important;
+  border-color: #E8C547 !important;
+  color: #2D2A1B !important;
+}
+
+/* line 100, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.cancel-link-3 {
+  position: relative;
+  left: 43%;
+  top: -5px;
+  color: #2D2A1B !important;
+  font-weight: bold;
+}
+/* line 106, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.cancel-link-3:hover {
+  color: #E8C547 !important;
+  font-weight: bold;
+}
+
+/* line 113, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.wrapper {
+  padding: 10% 15%;
+}
+
+/* line 117, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coaches-table-head {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* line 122, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coaches-table {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 15px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 130, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coaches-table tr:nth-child(even) {
+  background-color: #E8C547;
+}
+
+/* line 134, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coach-trows, a, td, th {
+  color: black !important;
+  border-color: black !important;
+}
+
+/* line 141, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coach-wrapper {
+  display: grid;
+  justify-content: center;
+}
+
+/* line 146, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coach-card {
+  position: relative;
+  top: .5em;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 155, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coach-card-name {
+  text-align: center;
+}
+
+/* line 159, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coach-edit-btn {
+  position: relative;
+  background-color: #2D2A1B !important;
+  border-color: #2D2A1B !important;
+  font-size: 1em !important;
+  color: #E8C547 !important;
+  top: .1em;
+  padding: 0 2em !important;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif !important;
+}
+/* line 169, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coach-edit-btn:hover {
+  background-color: #E8C547 !important;
+  border-color: #E8C547 !important;
+  color: #2D2A1B !important;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 15px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 178, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coach-delete-btn {
+  background-color: #2D2A1B !important;
+  border-color: #2D2A1B !important;
+  font-size: 1em !important;
+  color: #E8C547 !important;
+  padding: .5em 2em !important;
+  font-weight: bold;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif !important;
+}
+/* line 187, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/coaches.scss */
+.coach-delete-btn:hover {
+  background-color: #E8C547 !important;
+  border-color: #E8C547 !important;
+  color: #2D2A1B !important;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 15px 6px -7px rgba(43, 43, 43, 0.1);
+}
+/* line 6, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.modal-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 11, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.add-cohort-btn {
+  position: relative;
+  background-color: #618934 !important;
+  border-color: #618934;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  padding: 5px;
+}
+/* line 18, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.add-cohort-btn:hover {
+  background-color: #7D9E58 !important;
+  color: whitesmoke;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 13px 6px -7px rgba(43, 43, 43, 0.1) !important;
+}
+
+/* line 26, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohort-header {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #E8C547 !important;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1) !important;
+}
+
+/* line 35, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+#cohort-modal {
+  position: fixed;
+  display: none;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  min-width: 150%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 45, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohort-body {
+  position: relative;
+  background-color: #F4F4F4;
+  top: 4.5em;
+  height: 73%;
+  min-width: 130%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 18px 6px -7px rgba(43, 43, 43, 0.1) !important;
+}
+
+/* line 58, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohort-form {
+  position: relative;
+  left: 2.5em;
+  color: #2D2A1B;
+}
+
+/* line 64, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohort-body input {
+  width: fit-content !important;
+  margin-bottom: 0 !important;
+  background-color: #F4F4F4;
+  border-radius: 5px;
+}
+
+/* line 72, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohort-label {
+  margin: 0;
+  line-height: 0;
+  display: inline-block;
+}
+
+/* line 78, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohort-select-field {
+  width: fit-content !important;
+  margin-bottom: .5pc;
+  padding-right: 1.5pc;
+  border-color: #35393A !important;
+  color: #2D2A1B !important;
+}
+
+/* line 87, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohort-submit-btn {
+  position: relative;
+  left: 4.5em;
+  margin-top: -10px;
+  height: 2pc;
+  font-size: .9em !important;
+  line-height: 0 !important;
+  color: #2D2A1B !important;
+  border-color: #F4F4F4 !important;
+  background-color: #F4F4F4 !important;
+}
+/* line 97, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohort-submit-btn:hover {
+  background-color: #E8C547 !important;
+  border-color: #E8C547 !important;
+  color: #2D2A1B !important;
+}
+
+/* line 104, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cancel-link-2 {
+  position: relative;
+  left: 6.5em;
+  top: .5pc;
+  color: #2D2A1B !important;
+  font-weight: bold;
+}
+/* line 110, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cancel-link-2:hover {
+  color: #E8C547 !important;
+  font-weight: bold;
+}
+
+/* line 117, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.wrapper {
+  padding: 10% 15%;
+}
+
+/* line 121, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohorts-table-head {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* line 126, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohorts-table {
+  min-width: 100%;
+  min-height: 100%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 13px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 135, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohorts-table tr:nth-child(even) {
+  background-color: #E8C547;
+}
+
+/* line 139, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohorts-trows, a, td, th {
+  color: black !important;
+  border-color: black !important;
+}
+
+/* line 145, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.profile-wrapper {
+  padding: 8% 13.5%;
+}
+
+/* line 149, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.wrapper-card {
+  min-width: 116%;
+}
+
+/* line 153, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohort-card {
+  position: relative;
+  float: right;
+  width: 25%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 163, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohort-card-name {
+  display: grid;
+  justify-content: center;
+}
+
+/* line 168, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.hr-card {
+  border-color: black !important;
+  margin: 1.5rem 3rem !important;
+}
+
+/* line 173, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.row-card {
+  margin-top: 1.5rem;
+}
+
+/* line 177, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohort-edit-btn {
+  position: relative;
+  background-color: #2D2A1B !important;
+  border-color: #2D2A1B !important;
+  font-size: 1em !important;
+  color: #E8C547 !important;
+  top: .1em;
+  padding: 0 2em !important;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif !important;
+}
+/* line 187, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohort-edit-btn:hover {
+  background-color: #E8C547 !important;
+  border-color: #E8C547 !important;
+  color: #2D2A1B !important;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 15px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 196, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohort-delete-btn {
+  background-color: #2D2A1B !important;
+  border-color: #2D2A1B !important;
+  font-size: 1em !important;
+  color: #E8C547 !important;
+  padding: .5em 2em !important;
+  font-weight: bold;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif !important;
+}
+/* line 205, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.cohort-delete-btn:hover {
+  background-color: #E8C547 !important;
+  border-color: #E8C547 !important;
+  color: #2D2A1B !important;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 15px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 215, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.table-wrapper {
+  width: 85%;
+}
+
+/* line 219, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.players-table {
+  background-color: white;
+  border-radius: 5px;
+  min-width: 100%;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 227, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.players-table tr:nth-child(even) {
+  background-color: #E8E8E8;
+}
+
+/* line 232, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.add-players-btn {
+  position: relative;
+  background-color: #618934 !important;
+  border-color: #618934;
+  left: 78%;
+  font-size: 1em;
+  font-family: 'Oswald', sans-serif;
+  padding: 5px;
+}
+/* line 240, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.add-players-btn:hover {
+  background-color: #7D9E58 !important;
+  color: white;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 13px 6px -7px rgba(43, 43, 43, 0.1) !important;
+}
+
+/* line 248, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.add-players-body {
+  position: relative;
+  background-color: #F4F4F4;
+  top: 25%;
+  height: 30%;
+  width: 125%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+  -webkit-transition: all .7s ease-in;
+  opacity: 1;
+}
+
+/* line 261, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.players-select {
+  position: relative;
+  width: fit-content !important;
+  margin-bottom: 2em;
+  padding-right: 1.5pc;
+  border-color: black !important;
+  color: #2D2A1B !important;
+  height: 50%;
+  right: 10px;
+}
+
+/* line 272, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.players-cancel {
+  position: relative;
+  left: 5em;
+  color: black !important;
+  font-weight: bold;
+}
+/* line 277, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/cohorts.scss */
+.players-cancel:hover {
+  color: whitesmoke !important;
+  font-weight: bold;
+}
+/* line 1, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/navbars.scss */
+.nav-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 8, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/navbars.scss */
+#top-bar {
+  display: grid;
+  width: 100%;
+  height: 12.5%;
+  background-color: #E8C547;
+  position: fixed;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 15px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 18, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/navbars.scss */
+.logo {
+  position: relative;
+  margin-left: 14%;
+  color: #2D2A1B;
+}
+
+/* line 24, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/navbars.scss */
+#top-bar a {
+  display: block;
+  color: #2D2A1B !important;
+  text-align: center;
+  padding: 1.5em;
+}
+/* line 29, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/navbars.scss */
+#top-bar a:hover {
+  background-color: #2D2A1B !important;
+  color: #E8C547 !important;
+}
+
+/* line 36, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/navbars.scss */
+#side-bar {
+  display: grid;
+  position: fixed;
+  top: 0;
+  padding-bottom: 50%;
+  height: 100%;
+  min-width: 12%;
+  background-color: #2D2A1B;
+  z-index: 1;
+}
+
+/* line 47, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/navbars.scss */
+#side-bar a {
+  display: block;
+  color: #E8C547 !important;
+  text-align: center;
+  padding: 2.5em;
+}
+/* line 52, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/navbars.scss */
+#side-bar a:hover {
+  background-color: #E8C547 !important;
+  color: #2D2A1B !important;
+}
+/* line 6, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/pages.scss */
+.wrapper {
+  position: relative;
+  top: 0;
+  min-height: 100vh;
+}
+
+/* line 12, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/pages.scss */
+.content {
+  display: grid;
+  justify-content: center;
+  min-height: 100%;
+}
+
+/* line 19, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/pages.scss */
+.pri-bottom {
+  position: relative;
+  top: 2em;
+}
+
+/* line 24, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/pages.scss */
+.sec-bottom {
+  position: relative;
+  top: 1.5em;
+}
+
+/* line 30, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/pages.scss */
+.cohorts, .coaches, .clinics, .players, img {
+  border-radius: 50%;
+  height: 225px;
+  width: 225px;
+}
+/* line 34, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/pages.scss */
+.cohorts:hover, .coaches:hover, .clinics:hover, .players:hover, img:hover {
+  transform: scale(1.06, 1.06);
+  transition-duration: .8s;
+}
+
+/* line 41, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/pages.scss */
+.coaches, .players {
+  position: relative;
+  left: 1.5em;
+}
+
+/* line 46, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/pages.scss */
+.clinics, .cohorts {
+  position: relative;
+  right: 1.5em;
+}
+
+/* line 52, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/pages.scss */
+#bg {
+  background-image: url("/assets/bg-img2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  zoom: 95%;
+  margin: 0;
+}
+/* line 15, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.modal-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 20, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.add-player-btn {
+  position: relative;
+  left: 0;
+  background-color: #618934 !important;
+  border-color: #618934;
+  font-size: 1em;
+  font-family: 'Oswald', sans-serif;
+  padding: 5px;
+}
+/* line 28, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.add-player-btn:hover {
+  background-color: #7D9E58 !important;
+  color: white;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 13px 6px -7px rgba(43, 43, 43, 0.1) !important;
+}
+
+/* line 36, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-header {
+  position: relative;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #E8C547 !important;
+  text-align: center;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 13px 6px -7px rgba(43, 43, 43, 0.1) !important;
+}
+
+/* line 46, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+#player-modal {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  top: 0;
+  height: 100%;
+  min-width: 150%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 56, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-body {
+  position: relative;
+  background-color: #F4F4F4;
+  top: 10%;
+  height: 73%;
+  width: 125%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 69, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-form {
+  position: relative;
+  left: 2.5pc;
+  color: #2D2A1B;
+}
+
+/* line 75, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-label {
+  margin: 0;
+  line-height: 0;
+  display: inline-block;
+}
+
+/* line 81, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-body input {
+  border-radius: 5px;
+  width: fit-content !important;
+  margin-bottom: 0 !important;
+}
+
+/* line 87, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-select-field {
+  width: fit-content !important;
+  margin-bottom: .5pc;
+  padding-right: 1.5em;
+  border-color: black !important;
+  color: #2D2A1B !important;
+}
+
+/* line 95, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-submit-btn {
+  position: relative;
+  left: 28%;
+  margin-top: -10px;
+  height: 2em;
+  font-size: .9em !important;
+  line-height: 0 !important;
+  background-color: #F4F4F4 !important;
+  color: #2D2A1B !important;
+  border-color: #F4F4F4 !important;
+}
+/* line 105, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-submit-btn:hover {
+  background-color: #E8C547 !important;
+  border-color: #E8C547 !important;
+  color: #2D2A1B !important;
+}
+
+/* line 112, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.cancel-link-1 {
+  position: relative;
+  left: 7.5em;
+  top: .5em;
+  color: #2D2A1B !important;
+  font-weight: bold;
+}
+/* line 118, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.cancel-link-1:hover {
+  color: #E8C547 !important;
+  font-weight: bold;
+}
+
+/* line 125, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.wrapper {
+  padding: 10% 15%;
+}
+
+/* line 129, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-table-head {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* line 134, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.players-table {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 15px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 142, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.players-table tr:nth-child(even) {
+  background-color: #E8C547;
+}
+
+/* line 146, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-rows, a, td, th {
+  color: black !important;
+  border-color: black !important;
+}
+
+/* line 152, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-wrapper {
+  display: grid;
+  justify-content: center;
+}
+
+/* line 156, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-card {
+  position: relative;
+  top: 2em;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 165, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-card-name {
+  display: grid;
+  justify-content: center;
+}
+
+/* line 170, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-edit-btn {
+  position: relative;
+  background-color: #2D2A1B !important;
+  border-color: #2D2A1B !important;
+  font-size: 1em !important;
+  color: #E8C547 !important;
+  top: .1em;
+  padding: 0 2em !important;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif !important;
+}
+/* line 180, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-edit-btn:hover {
+  background-color: #E8C547 !important;
+  border-color: #E8C547 !important;
+  color: #2D2A1B !important;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 15px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 189, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-delete-btn {
+  background-color: #2D2A1B !important;
+  border-color: #2D2A1B !important;
+  font-size: 1em !important;
+  color: #E8C547 !important;
+  padding: .5em 2em !important;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+}
+/* line 197, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/players.scss */
+.player-delete-btn:hover {
+  background-color: #E8C547 !important;
+  border-color: #E8C547 !important;
+  color: #2D2A1B !important;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 15px 6px -7px rgba(43, 43, 43, 0.1);
+}
+/* line 6, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* line 11, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+.modal-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 16, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+.login-btn {
+  position: relative;
+  top: 13em;
+}
+
+/* line 21, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+.add-login-btn {
+  background-color: #2D2A1B;
+  border-color: #2D2A1B;
+  color: #E8C547;
+  font-size: 1.2em;
+  border-radius: 5px;
+  padding: .5em 4em;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+}
+/* line 30, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+.add-login-btn:hover {
+  background-color: #E8C547;
+  color: #2D2A1B;
+  border-color: #E8C547;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 15px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 39, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+.admin-header {
+  position: relative;
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #E8C547;
+  text-align: center;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 10px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 50, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+#admin-modal {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  top: 0;
+  height: 100%;
+  min-width: 150%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 60, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+.admin-body {
+  position: relative;
+  background-color: #F4F4F4;
+  top: 20%;
+  height: 35%;
+  width: 125%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+  -webkit-transition: all .7s ease-in;
+  opacity: 1;
+}
+
+/* line 73, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+.admin-form {
+  position: relative;
+  left: 1.5em;
+  color: #2D2A1B;
+  margin-top: 1.5em;
+}
+
+/* line 80, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+.admin-label {
+  margin: 5px;
+  line-height: 1em;
+  display: inline-block;
+}
+
+/* line 86, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+.admin-body input {
+  border-radius: 5px;
+  width: fit-content;
+  margin-bottom: 0;
+  border-color: #2D2A1B;
+  height: 2.5em;
+}
+
+/* line 94, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+.admin-select-field {
+  width: fit-content;
+  margin-bottom: .5pc;
+  padding-right: 1.5pc;
+  border-color: #2D2A1B;
+  color: #2D2A1B;
+}
+
+/* line 102, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+.admin-submit-btn {
+  position: relative;
+  left: 35%;
+  height: 2em;
+  font-size: .9em;
+  font-weight: bold;
+  line-height: 0;
+  background-color: #F4F4F4;
+  border-color: #F4F4F4 !important;
+}
+/* line 111, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+.admin-submit-btn:hover {
+  background-color: #E8C547;
+  border-color: #E8C547 !important;
+  color: #F4F4F4;
+}
+
+/* line 118, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+.cancel-link {
+  position: relative;
+  left: 4.8em;
+  top: .5em;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 125, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+.cancel-link:hover {
+  color: #E8C547;
+  font-weight: bold;
+}
+
+/* line 131, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/sessions.scss */
+.option-area {
+  position: relative;
+  top: 1.5em;
+}
+/* line 6, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* line 11, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.modal-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 16, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.signup-btn {
+  position: relative;
+  top: 14em;
+}
+
+/* line 21, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-signup-btn {
+  background-color: #2D2A1B;
+  border-color: #2D2A1B;
+  font-size: 1.2em;
+  color: #E8C547;
+  padding: .5em 3.5em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+}
+/* line 30, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-signup-btn:hover {
+  background-color: #E8C547;
+  border-color: #E8C547;
+  color: #2D2A1B;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 15px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 39, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-header {
+  position: relative;
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #E8C547;
+  text-align: center;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 10px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 50, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+#user-modal {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  top: 0;
+  height: 100%;
+  min-width: 150%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 60, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-body {
+  position: relative;
+  background-color: #F4F4F4;
+  top: 20%;
+  height: 55%;
+  width: 125%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+  -webkit-transition: all .7s ease-in;
+  opacity: 1;
+}
+
+/* line 73, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-form {
+  position: relative;
+  left: 1.5em;
+  color: #2D2A1B;
+  margin-top: 1.5em;
+}
+
+/* line 80, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-label {
+  margin: 5px;
+  line-height: 1em;
+  display: inline-block;
+}
+
+/* line 86, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-body input {
+  border-radius: 5px;
+  width: fit-content;
+  margin-bottom: 0;
+  border-color: #2D2A1B;
+  color: #2D2A1B;
+  height: 2em;
+}
+
+/* line 95, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-select-field {
+  width: fit-content;
+  margin-bottom: .5pc;
+  padding-right: 1.5pc;
+  border-color: #2D2A1B;
+  color: whitesmoke;
+}
+
+/* line 103, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-submit-btn {
+  position: relative;
+  left: 35%;
+  height: 2em;
+  font-size: .9em;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 0;
+  background-color: #F4F4F4;
+  border-color: #F4F4F4 !important;
+}
+/* line 113, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-submit-btn:hover {
+  background-color: #E8C547;
+  border-color: #E8C547 !important;
+  color: #F4F4F4;
+}
+
+/* line 120, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.cancel-link {
+  position: relative;
+  left: 4.8em;
+  top: .5em;
+  color: #2D2A1B;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 127, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.cancel-link:hover {
+  color: #E8C547 !important;
+  font-weight: bold;
+}
+
+/* line 133, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.edit-cancel-link {
+  position: relative;
+  left: 5.5em;
+  top: .5em;
+  color: #2D2A1B;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 140, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.edit-cancel-link:hover {
+  color: #E8C547 !important;
+  font-weight: bold;
+}
+
+/* line 146, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.submit-cancel {
+  position: relative;
+  top: 2.5em;
+}
+
+/* line 152, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.alert-success {
+  position: relative;
+  background-color: lightgreen;
+  width: 100%;
+  color: black;
+  top: 0;
+}
+
+/* line 160, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-wrapper {
+  display: grid;
+  justify-content: center;
+}
+
+/* line 165, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-card {
+  position: relative;
+  top: 5.5em;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 174, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-card-name {
+  text-align: center;
+}
+
+/* line 179, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-edit-btn {
+  position: relative;
+  background-color: #2D2A1B !important;
+  border-color: #2D2A1B !important;
+  font-size: 1em !important;
+  color: #E8C547 !important;
+  top: .1em;
+  padding: 0 2em !important;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif !important;
+}
+/* line 189, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-edit-btn:hover {
+  background-color: #E8C547 !important;
+  border-color: #E8C547 !important;
+  color: #2D2A1B !important;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 15px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 198, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-update-btn {
+  position: relative;
+  left: 24%;
+  background-color: #F4F4F4 !important;
+  border-color: #F4F4F4 !important;
+  font-size: 1em !important;
+  color: #2D2A1B !important;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif !important;
+}
+/* line 207, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.user-update-btn:hover {
+  background-color: #E8C547 !important;
+  border-color: #E8C547 !important;
+  color: #2D2A1B !important;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 15px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+/* line 216, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.update-cancel {
+  position: relative;
+  top: 1em;
+}
+
+/* line 221, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.delete-user-btn {
+  background-color: #2D2A1B !important;
+  border-color: #2D2A1B !important;
+  font-size: 1em !important;
+  color: #E8C547 !important;
+  padding: .5em 2em !important;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+}
+/* line 229, /Users/macbook/Desktop/squash-admin/app/assets/stylesheets/users.scss */
+.delete-user-btn:hover {
+  background-color: #E8C547 !important;
+  border-color: #E8C547 !important;
+  color: #2D2A1B !important;
+  box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 15px 6px -7px rgba(43, 43, 43, 0.1);
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+ :root {
+   background-color: whitesmoke;
+ }
+
+ #main-body {
+   font-family: 'Oswald', sans-serif;
+
+ }
+
+ body {
+   font-family: 'Oswald', sans-serif;
+
+ }
+
+ .modal-container {
+   display: flex;
+   justify-content: center;
+ }
+
+ .login-btn {
+   position: relative;
+   top: 13em
+ }
+
+ .add-login-btn {
+   background-color: #2D2A1B;
+   border-color: #2D2A1B;
+   color: #E8C547;
+   font-size: 1.2em;
+   border-radius: 5px;
+   padding: .5em 4em;
+   cursor: pointer;
+   font-family: 'Oswald', sans-serif;
+     &:hover {
+        background-color: #E8C547;
+        color: #2D2A1B;
+        border-color: #E8C547;
+        box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+        0 15px 6px -7px rgba(43,43,43,0.1);
+   }
+ }
+
+ .admin-header {
+   position: relative;
+   margin: 0;
+   font-size: 1.8em;
+   font-weight: bold;
+   color: #E8C547;
+   text-align: center;
+   box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+   0 10px 6px -7px rgba(43,43,43,0.1);
+ }
+
+ #admin-modal {
+   position: fixed;
+   display: none;
+   z-index: 1;
+   top: 0;
+   height: 100%;
+   min-width: 150%;
+   background-color: rgba(0,0,0,0.4);
+ }
+
+ .admin-body {
+   position: relative;
+   background-color: #F4F4F4;
+   top: 20%;
+   height: 35%;
+   width: 125%;
+   border-radius: 10px;
+   box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),
+   0 11px 6px -7px rgba(43,43,43,0.1);
+   -webkit-transition: all .7s ease-in;
+   opacity: 1;
+ }
+
+ .admin-form {
+   position: relative;
+   left: 1.5em;
+   color: #2D2A1B;
+   margin-top: 1.5em;
+ }
+
+ .admin-label {
+   margin: 5px;
+   line-height: 1em;
+   display: inline-block;
+ }
+
+ .admin-body input {
+   border-radius: 5px;
+   width: fit-content;
+   margin-bottom: 0;
+   border-color: #2D2A1B;
+   height: 2.5em;
+ }
+
+ .admin-select-field {
+   width: fit-content;
+   margin-bottom: .5pc;
+   padding-right: 1.5pc;
+   border-color: #2D2A1B;
+   color: #2D2A1B;
+ }
+
+ .admin-submit-btn {
+   position: relative;
+   left: 35%;
+   height: 2em;
+   font-size: .9em;
+   font-weight: bold;
+   line-height: 0;
+   background-color: #F4F4F4;
+   border-color: #F4F4F4 !important;
+     &:hover {
+       background-color: #E8C547;
+       border-color: #E8C547 !important;
+       color: #F4F4F4;
+   }
+ }
+
+ .cancel-link {
+   position: relative;
+   left: 4.8em;
+   top: .5em;
+   color: black;
+   text-decoration: none;
+   font-weight: bold;
+     &:hover {
+       color: #E8C547;
+       font-weight: bold;
+   }
+ }
+
+ .option-area {
+   position: relative;
+   top: 1.5em;
+ }
