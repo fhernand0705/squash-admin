@@ -20,14 +20,13 @@
 
  #main-body {
    font-family: 'Oswald', sans-serif;
-
  }
 
  body {
    font-family: 'Oswald', sans-serif;
-
  }
 
+/* APP ENTRY PAGE */
  .modal-container {
    display: flex;
    justify-content: center;
@@ -36,6 +35,21 @@
  .login-btn {
    position: relative;
    top: 13em
+ }
+
+ .demo-btn {
+   display: grid;
+   color: #E8C547 !important;
+   font-size: 1.2em;
+   justify-content: center;
+   position: relative;
+   background: green;
+   top: 12.5em;
+   margin-left: 42.5%;
+   margin-right: 42.5%;
+   padding: 11px 16px;
+   border-radius: 5px;
+   text-decoration: none;
  }
 
  .add-login-btn {
@@ -128,11 +142,12 @@
    line-height: 0;
    background-color: #F4F4F4;
    border-color: #F4F4F4 !important;
-     &:hover {
-       background-color: #E8C547;
-       border-color: #E8C547 !important;
-       color: #F4F4F4;
-   }
+ }
+
+ .admin-submit-btn:hover {
+   background-color: #E8C547;
+   border-color: #E8C547 !important;
+   color: #F4F4F4;
  }
 
  .cancel-link {
