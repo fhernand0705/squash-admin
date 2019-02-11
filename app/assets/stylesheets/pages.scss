@@ -56,3 +56,18 @@
   zoom: 95%;
   margin: 0;
 }
+
+.demo-btn {
+  display: grid;
+  color: #E8C547 !important;
+  font-size: 1.2em;
+  justify-content: center;
+  position: relative;
+  background: green;
+  top: 12.5em;
+  margin-left: 42.5%;
+  margin-right: 42.5%;
+  padding: 11px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+}
