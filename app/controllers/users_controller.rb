@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    if @user.id === 7
+    if @user.id === 1
       session[:user_id] = @user.id
     end
   end
